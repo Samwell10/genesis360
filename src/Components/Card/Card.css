@@ -1,0 +1,49 @@
+.card{
+    width: 500px;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    box-shadow:  4px 4px 4px 0px #00000013;
+    border-radius: 10px;
+}
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-dp img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.card-username h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+}
+.card-username p, .card-bottom p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+}
+.three-dot svg{
+    color: gray;
+}
+.card-body{
+    margin-top: 15px;
+} 
+.card-body p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000df;
+}
+.card-body p span{
+    color: rgb(57, 131, 216);
+}
+.card-bottom{
+    margin-top: 15px;
+}

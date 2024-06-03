@@ -1,0 +1,43 @@
+.header{
+    padding: 15rem 0rem 0rem 0rem ;
+    /* height: 90vh;
+    background-image: url("../../Assets/background.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 80%; */
+}
+.header-info{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-info h4{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+.header-info p{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.download-buttons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.download-buttons img{
+    width: 40%;
+}
+.header-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image img{
+    width: 100%;
+}

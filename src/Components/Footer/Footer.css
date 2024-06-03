@@ -1,0 +1,78 @@
+.footer{
+    padding: 5.6rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../../Assets/footer2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-left img{
+    width: 80%;
+}
+.social-media{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social-media svg{
+    font-size: 1.4rem;
+}
+.footer-right{
+    width: 40%;
+}
+.contact-us h5{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.contact-us p{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #183D36;
+}
+.contact-us{
+    margin-bottom: 40px;
+}
+.suscribe-text{
+    font-family: "Quicksand";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #183D36;
+}
+.suscribe-field{
+    margin-top: 49px;
+    display: flex;
+    width: 100%;
+}
+.suscribe-field input{
+    background-color: white;
+    border: 1px solid #90DD3E;
+    padding: 1.3rem;
+    font-family: "Quicksand";
+    font-size: 1.25rem;
+    width: 70%;
+    font-weight: 500;
+    color: #906D6D;
+}
+.suscribe-field button{
+    width: 30%;
+    background-color: #90DD3E;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 2.8rem; 
+    font-family: "Quicksand";
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #183D36;
+}

@@ -1,0 +1,21 @@
+.testimony{
+    padding: 0% 0rem;
+}
+.testimony-header{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #183D36;
+    text-align: center;
+}
+.testimony-body{
+    height: 250px;
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow-x: scroll;
+}
+
+.testimony-body::-webkit-scrollbar{
+    width: 0px;
+}

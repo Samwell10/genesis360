@@ -1,0 +1,181 @@
+.section{
+    padding: 10rem 6rem;
+}
+.section-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 180px;
+    margin-bottom: 240px;
+}
+.section-inner-2{
+    flex-direction: row-reverse;
+}
+.section-left{
+    position: relative;
+    width: 40%;
+}
+.wallet-balance{
+    position: absolute;
+    top: 1rem;
+    left:-2rem;
+    z-index: 4;
+    background-color: #183D36;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.balance-category{
+    position: absolute;
+    bottom: 1.3rem;
+    right:-6rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #183D36;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.loan-request{
+    position: absolute;
+    z-index: 4;
+    top: -2rem;
+    left:-4rem;
+    border: 1px solid #183D36;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+}
+.amount{
+    position: absolute;
+    bottom: -5rem;
+    right:-3rem;
+    background-color: #fff;
+    padding: 0.8rem 1rem;
+}
+.product{
+    position: absolute;
+    z-index: 4;
+    top: -5rem;
+    left:-1rem;
+    border: 1px solid #183D36;
+    background-color: white;
+    padding: 0.5rem;
+}
+.product-2{
+    top: 19rem;
+    left:22rem;
+}
+.prod-image{
+    width: 160px;
+    height: 160px;
+    background-color: #F2F4F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-image img{
+    width: 50% !important;
+    border-radius: 0px !important;
+}
+.product p{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #183D36;
+}
+.product h4{
+    margin-top:  5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.amount-field{
+    width: 100%;
+    margin-top: 16px;
+}
+.amount-field label{
+    color: #183D36;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.input-field{
+    margin-top: 4px;
+    width: 300px;
+    padding: 0.75rem;
+    border: 1px solid #D0D5DD;
+    border-radius: 3px;
+}
+.loan-head h3{
+    margin-top: 10px;
+    color: #183D36;
+  font-size: 1.1rem;
+    font-weight: 600;  
+}
+.loan-amount{
+    margin-top: 16px;
+    width: 300px;
+    padding: 0.5rem 0.75rem;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+}
+.loan-amount p{
+    color: #183D36;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.loan-amount h4{
+    margin-top: 10px;
+    color: #183D36;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.balance-inner{
+    padding: 1rem 1.5rem;
+}
+.balance-inner2{
+    border-right: 1px solid #183D36;
+}
+.balance-inner p{
+    text-align: center;
+    color: #183D36;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.balance-inner h4{
+    text-align: center;
+    color: #183D36;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.wallet-balance p{
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.wallet-balance p span{
+    margin-left: 10px;
+}
+.wallet-balance h3{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.section-right{
+    width: 60%;
+}
+.section-left img{
+    width: 100%;
+    border-radius: 50%;
+}
+.section-right h4{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.section-right p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #183D36;
+}
