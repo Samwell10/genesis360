@@ -19,7 +19,7 @@ const Header = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
-                    Financing Solutions Tailored to Food Businesses and 
+                    Financing Solutions Tailored to Food businesses and food consumers
                 </motion.p>
                 <div className="download-buttons">
                     <motion.img 
