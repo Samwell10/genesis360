@@ -20,6 +20,10 @@
     color: #183D36;
     cursor: pointer;
 }
+.nav-text a{
+    text-decoration: none;
+    color: #183D36;
+}
 .store-buttons{
     display: flex;
     align-items: center;
@@ -28,4 +32,29 @@
 .store-buttons img{
     width: 50%;
     cursor: pointer;    
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+}
+.nav-search input{
+    padding: 0rem 1.2rem;
+    height: 40px;
+    border: 1px solid #183D36;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #183D36;
+    cursor: pointer;
+}
+.nav-search button{
+    padding: 0rem 1rem;
+    background-color: #183D36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0px 5px 5px 0px;
 }

@@ -1,0 +1,27 @@
+.blog-header{
+    padding: 9rem 6rem;
+}
+.page-title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #183D36;
+}
+.blog-header-component{
+    display: flex;
+    gap: 46px;
+}
+.blog-main{
+    width: 70%;
+}
+.blog-recent{
+    width: 30%;
+}
+.recent-blog-inner{
+    margin-bottom: 30px;
+}
+.blog-content{
+    margin-top: 77px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}

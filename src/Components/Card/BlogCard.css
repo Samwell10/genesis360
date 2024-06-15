@@ -1,0 +1,54 @@
+.blogcard{
+    width: 100%;
+}
+.blogcard2{
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+.image-ele {
+    width: 100%;
+    height: 520px;
+    margin-bottom: 10px;
+}
+
+.image-ele img {
+    width: 100%;
+    height: 100%; /* Ensure the image maintains its aspect ratio */
+    object-fit: cover;
+     /* This will make the image cover the entire container */
+}
+
+.image-ele-2 {
+    width: 100%;
+    height: 200px; /* Set the desired height */
+    margin-bottom: 10px;
+}
+
+.image-ele-2 img {
+    width: 100%;
+    height: 100%; /* Ensure the image covers the container */
+    object-fit: cover; /* This will make the image cover the entire container */
+}
+.category-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category-text{
+    font-weight: 700;
+}
+.category-date p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: #183D36;
+}
+.blog-title{
+    font-size: 3rem;
+    font-weight: 700px;
+    color: #183D36;
+}
+.blog-title-2{
+    font-size: 1rem;
+    font-weight: 700px;
+    color: #183D36;
+}

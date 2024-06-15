@@ -1,0 +1,39 @@
+.suscribe{
+    padding: 8rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+}
+.suscribe h4{
+    font-size: 2rem;
+    font-size: 700;
+    color: #183D36;
+    margin-bottom: 10px;
+}
+.suscribe p{
+    font-size: 1.25rem;
+    font-size: 700;
+    color: #183D36;
+}
+.suscribe-form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+.suscribe-form input{
+    width: 900px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 1.5rem;
+}
+.suscribe-form button{
+    padding: 1.5rem 4.125rem;
+    font-size: 1.25rem;
+    font-size: 700;
+    color: white;
+    background-color: #183D36;
+}
