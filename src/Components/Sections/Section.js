@@ -28,7 +28,7 @@ const Section = () => {
                         src={wallet}
                     ></motion.img>
                     <motion.div 
-                    initial={{ x: 100, opacity: 0 }}
+                    initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ type: "spring", duration: 1, delay: 1}}   
                     className="balance-category">
@@ -82,7 +82,7 @@ const Section = () => {
                         src={coin}
                     ></motion.img>
                     <motion.div 
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ type: "spring", duration: 1, delay: 1}}   
                         className="amount"
@@ -139,7 +139,7 @@ const Section = () => {
                         src={supplier}
                     ></motion.img>
                     <motion.div 
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ type: "spring", duration: 1, delay: 1}}
                         className="product-2 product"

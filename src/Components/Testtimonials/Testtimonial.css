@@ -19,3 +19,12 @@
 .testimony-body::-webkit-scrollbar{
     width: 0px;
 }
+@media (max-width:800px) {
+    .testimony-header{
+        padding: 0rem 2rem;
+        font-size: 2rem;
+        font-weight: 800;
+        color: #183D36;
+        text-align: center;
+    }   
+}

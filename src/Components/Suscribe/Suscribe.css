@@ -37,3 +37,32 @@
     color: white;
     background-color: #183D36;
 }
+@media (max-width:800px){
+    .suscribe h4{
+        text-align: center;
+        font-size: 1.8rem;
+        font-size: 700;
+        color: #183D36;
+        margin-bottom: 10px;
+    }
+    .suscribe p{
+        text-align: center;
+        font-size: 1rem;
+        font-size: 700;
+        color: #183D36;
+    }
+    .suscribe-form input{
+        width: 230px;
+        background-color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    .suscribe-form button{
+        padding: 1rem 1.8rem;
+        font-size: 0.8rem;
+        font-size: 700;
+        color: white;
+        background-color: #183D36;
+    }
+}

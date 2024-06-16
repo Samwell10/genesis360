@@ -182,3 +182,127 @@
     font-weight: 500;
     color: #183D36;
 }
+@media (max-width: 800px){
+    .section{
+        padding: 3rem 2rem;
+    }
+    .section-inner{
+        flex-direction: column-reverse;
+        gap: 80px;
+    }
+    .section-left, .section-right{
+        width: 100%;
+    }
+    .wallet-balance{
+        top: -0.5rem;
+        left:1rem;
+        padding: 0.8rem 2.5rem;
+    }
+    .wallet-balance p{
+        font-size: 0.75rem;
+    }
+    .wallet-balance p span{
+        margin-left: 10px;
+    }
+    .wallet-balance h3{
+        font-size: 1.2rem;
+    }
+    .balance-category{
+        bottom: 1rem;
+        right:0rem;
+    }
+    .balance-inner{
+        padding: 0.8rem 1rem;
+    }
+    .balance-inner p{
+        text-align: center;
+         color: #183D36;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .balance-inner h4{
+        text-align: center;
+        color: #183D36;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .loan-request{
+        top: -2rem;
+        left:1rem;
+        padding: 0.65rem 0.8rem;
+    }
+    .loan-head h3{
+        margin-top: 10px;
+        color: #183D36;
+        font-size: 1rem;
+        font-weight: 600;  
+    }
+    .loan-amount{
+        margin-top: 16px;
+        width: 200px;
+        padding: 0.5rem 0.75rem;
+        background-color: #EAEAEA;
+        border-radius: 8px;
+    }
+    .loan-amount p{
+        color: #183D36;
+        font-size: 0.75rem;
+    }
+    .loan-amount h4{
+        font-size: 1rem;
+    }
+    .amount{
+        bottom: -5rem;
+        right:1rem;
+        padding: 0.5rem 0.8rem;
+    }
+    .amount-field label{
+        color: #183D36;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .input-field{
+        width: 200px;
+        padding: 0.5rem;
+    }
+    .product{
+        top: -1rem;
+        left: 1rem;
+        padding: 0.5rem;
+    }
+    .product-2{
+        top: 16rem;
+        left:13rem;
+    }
+    .prod-image{
+        width: 80px;
+        height: 80px;
+    }
+    .prod-image img{
+        width: 50% !important;
+        border-radius: 0px !important;
+    }
+    .product p{
+        font-size: 0.5rem;
+        font-weight: 400;
+        color: #183D36;
+    }
+    .product h4{
+        margin-top:  5px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #183D36;
+    }
+    .section-right h4{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #183D36;
+    }
+    .section-right p{
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #183D36;
+    }
+    
+}

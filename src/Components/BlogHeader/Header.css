@@ -7,6 +7,7 @@
     color: #183D36;
 }
 .blog-header-component{
+    margin-top: 10px;
     display: flex;
     gap: 46px;
 }
@@ -24,4 +25,21 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
+}
+@media (max-width: 800px) {
+    .blog-header{
+        padding: 7rem 2rem;
+    }
+    .blog-main{
+        width: 100%;
+    }
+    .blog-recent{
+        display: none;
+    }
+    .blog-content{
+        margin-top: 77px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
 }
