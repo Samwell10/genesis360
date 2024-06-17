@@ -1,6 +1,9 @@
 .blogcard{
     width: 100%;
 }
+.link-blog{
+    text-decoration: none;
+}
 .blogcard2{
     padding: 0.5rem;
     border: 1px solid black;

@@ -189,6 +189,7 @@
     .section-inner{
         flex-direction: column-reverse;
         gap: 80px;
+        margin-bottom: 100px;
     }
     .section-left, .section-right{
         width: 100%;
@@ -271,7 +272,8 @@
         padding: 0.5rem;
     }
     .product-2{
-        top: 16rem;
+        display: none;
+        top: 14rem;
         left:13rem;
     }
     .prod-image{
