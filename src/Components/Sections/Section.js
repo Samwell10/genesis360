@@ -183,14 +183,14 @@ const Section = () => {
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     >
-                        Financing for Food: Access Funds Hassle-Free
+                        GenSave: Unlock Your Financial Dreams with GenSave
                     </motion.h4>
                     <motion.p
                     initial={{ y: -50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ type: "spring", duration: 1, delay: 0.6}}        
                     >
-                      Our hassle-free loan request process makes it simple to access the funds you need when you need them. Loans are provided in food items, ensuring that you can meet your nutritional needs without financial strain. Whether it's for groceries, meal subscriptions, or special dietary requirements, our transparent terms and quick approvals ensure that you can pursue your goals without delay.
+                      Your Path to Festive Feasting & Beyond! Embark on a journey towards financial fulfillment with GenSave by Genesis360 – your pathway to achieving specific goals effortlessly. Whether you're saving up for festive feasting or other essentials, GenSave ensures your aspirations are within reach while earning a competitive interest rate. With GenSave, you can effortlessly save towards your desired target, whether it's for purchasing food items or other essentials from the marketplace. Experience the freedom of financial empowerment today with GenSave.
                     </motion.p>
                 </div>
             </div>
