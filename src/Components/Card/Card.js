@@ -1,17 +1,17 @@
 import "./Card.css"
 import profile1 from "../../Assets/proffile1.jpg"
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
-const Card = () => {
+const Card = ({name, username, testimony, date, image}) => {
     return ( 
         <div className="card">
             <div className="card-top">
                 <div className="card-user">
                     <div className="card-dp">
-                        <img src={profile1}></img>
+                        <img src={image}></img>
                     </div>
                     <div className="card-username">
-                        <h3>GraceFood</h3>
-                        <p>@gracefood</p>
+                        <h3>{name}</h3>
+                        <p>{username}</p>
                     </div>
                 </div>
                 <div className="three-dot">
@@ -20,12 +20,12 @@ const Card = () => {
             </div>
             <div className="card-body">
                 <p>
-                    Genesis360 has simplified my life! Flexible repayment plans, easy logistics, and great discounts. Couldn't ask for more.
+                    {testimony}
                     <span>#Genesis360Experience</span>
                 </p>
             </div>
             <div className="card-bottom">
-                <p>11:35pm . Jun 1, 2023</p>
+                <p>{date}</p>
             </div>
         </div>
      );
