@@ -3,195 +3,60 @@ import wallet from "../../Assets/wallet.png"
 import coin from "../../Assets/coins2.png"
 import supplier from "../../Assets/supplier.png"
 import accesss from "../../Assets/access.png"
-import { FaEyeSlash } from "react-icons/fa"
+import { FaArrowRight, FaChevronLeft, FaChevronRight, FaEyeSlash } from "react-icons/fa"
 import sugar from "../../Assets/sugar.png"
 import { motion } from "framer-motion";
 import { MdOutlineMeetingRoom } from "react-icons/md"
+import { goalsData } from "../data"
+import { useRef } from "react"
+import { FaArrowLeft } from "react-icons/fa6"
 const Section = () => {
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+        const { current } = scrollRef;
+        if (direction === "left") {
+            current.scrollBy({ left: -480, behavior: "smooth" });
+        } else {
+            current.scrollBy({ left: 480, behavior: "smooth" });
+        }
+    };
     return ( 
         <div className="section">
-            <div className="section-inner">
-                <div className="section-left">
+            <motion.h4
+                className="section-header"
+                initial={{ y: -100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+            >
+                Products designed to help you achieve all your life goals
+            </motion.h4>
+            <div className="section-inner" ref={scrollRef}>
+                {goalsData.map((data,index)=>{
+                  return(
                     <motion.div 
-                        initial={{ x: -100, opacity: 0 }}
+                        className="section-card"
+                        initial={{ x: 50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.8 }}   
-                        className="wallet-balance"
+                        transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     >
-                        <p>Wallet Balance<span><FaEyeSlash/></span></p>
-                        <h3>₦3,200,000</h3>
-                    </motion.div>
-                    <motion.img 
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.5}}
-                        src={wallet}
-                    ></motion.img>
-                    <motion.div 
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 1}}   
-                    className="balance-category">
-                        <div className="balance-inner balance-inner2">
-                            <p>Credit Limit</p>
-                            <h4>₦3,200,000</h4>
-                        </div>
-                        <div className="balance-inner">
-                            <p>Outstanding Debt</p>
-                            <h4>-₦3,200,000</h4>
+                        <h4>{data.title}</h4>
+                        <div>
+                            <p>{data.body}</p>
+                            <button 
+                                style={{"backgroundColor":`${data.color}`}}
+                            >Learn More</button>
                         </div>
                     </motion.div>
-                </div>
-                <div className="section-right">
-                    <motion.h4
-                      initial={{ y: -100, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ type: "spring", duration: 1, delay: 0.3 }}        
-                    >
-                        Digital Wallet: Take Control of Your Finances
-                    </motion.h4>
-                    <motion.p
-                    initial={{ y: -50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.6}}        
-                    >
-                        Take control of your finances with our secure and user-friendly digital wallet. Seamlessly manage your funds, make payments, and track transactions with ease. With instant access to your money anytime, anywhere, experience unparalleled convenience and peace of mind.
-                    </motion.p>
-                </div>
+                  )      
+                })}
             </div>
-            <div className="section-inner section-inner-2">
-                <div className="section-left">
-                    <motion.div 
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.8 }}   
-                        className="loan-request"
-                    >
-                        <div className="loan-head">
-                            <h3>Loan Request</h3>
-                        </div>
-                        <div className="loan-amount">
-                            <p>Eligible Loan</p>
-                            <h4>₦68,000</h4>
-                        </div>
-                    </motion.div> 
-                    <motion.img
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.5}}
-                        src={coin}
-                    ></motion.img>
-                    <motion.div 
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 1}}   
-                        className="amount"
-                    >
-                        <div className="amount-field">
-                            <label>Amount</label>
-                            <div className="input-field">
-                                <p>₦253.685</p>
-                            </div>
-                        </div>
-                        <div className="amount-field">
-                            <label>Amount</label>
-                            <div className="input-field">
-                                <p>₦253.685</p>
-                            </div>
-                        </div>
-                    </motion.div>
+            <div className="section-control">
+                <div className="section-button" onClick={() => scroll("left")}>
+                    <FaChevronLeft/>
                 </div>
-                <div className="section-right">
-                    <motion.h4
-                      initial={{ y: -100, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ type: "spring", duration: 1, delay: 0.3 }}        
-                    >
-                        Flexible Loan<br></br> Repayment
-                    </motion.h4>
-                    <motion.p
-                    initial={{ y: -50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.6}}        
-                    >
-                        Say goodbye to rigid loan terms and hello to flexibility with Genesis360's loan repayment options. We understand the challenges of managing finances, which is why we offer customizable repayment plans tailored to your needs. Whether it's invoice financing, asset financing, or consumer credit, we've got you covered.
-                    </motion.p>
-                </div>
-            </div>
-            <div className="section-inner">
-                <div className="section-left">
-                    <motion.div 
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.8 }}   
-                        className="product"
-                    >
-                        <div className="prod-image">
-                            <img src={sugar}></img>
-                        </div>
-                        <p>Golden Penny Premium<br></br> Quality Semolina - 1kg</p>
-                        <h4>₦6,400</h4>
-                    </motion.div>
-                    <motion.img 
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.5}}
-                        src={supplier}
-                    ></motion.img>
-                    <motion.div 
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 1}}
-                        className="product-2 product"
-                    >
-                        <div className="prod-image">
-                            <img src={sugar}></img>
-                        </div>
-                        <p>Golden Penny Premium<br></br> Quality Semolina - 1kg</p>
-                        <h4>₦6,400</h4>
-                    </motion.div>
-                </div>
-                <div className="section-right">
-                    <motion.h4
-                      initial={{ y: -100, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ type: "spring", duration: 1, delay: 0.3 }}        
-                    >
-                        Genesis360 Marketplace: Your One-Stop Hub for Food Supplies
-                    </motion.h4>
-                    <motion.p
-                    initial={{ y: -50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.6}}        
-                    >
-                       Explore a vibrant ecosystem where you can source quality ingredients and food supplies directly from trusted vendors. Our marketplace connects food businesses and consumers, facilitating seamless transactions and ensuring swift delivery within 24 hours.
-                    </motion.p>
-                </div>
-            </div>
-            <div className="section-inner section-inner-2">
-                <div className="section-left">
-                    <motion.img 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.5}}
-                    src={accesss}
-                    ></motion.img>
-                </div>
-                <div className="section-right">
-                <motion.h4
-                      initial={{ y: -100, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ type: "spring", duration: 1, delay: 0.3 }}        
-                    >
-                        GenSave: Unlock Your Financial Dreams with GenSave
-                    </motion.h4>
-                    <motion.p
-                    initial={{ y: -50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.6}}        
-                    >
-                      Your Path to Festive Feasting & Beyond! Embark on a journey towards financial fulfillment with GenSave by Genesis360 – your pathway to achieving specific goals effortlessly. Whether you're saving up for festive feasting or other essentials, GenSave ensures your aspirations are within reach while earning a competitive interest rate. With GenSave, you can effortlessly save towards your desired target, whether it's for purchasing food items or other essentials from the marketplace. Experience the freedom of financial empowerment today with GenSave.
-                    </motion.p>
+                <div className="section-button" onClick={() => scroll("right")}>
+                    <FaChevronRight/>
                 </div>
             </div>
         </div>

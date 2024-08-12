@@ -1,15 +1,50 @@
+import AboutCard from "../Card/AboutCard";
+import { aboutData } from "../data";
 import "./Banner.css"
 import { motion } from "framer-motion";
 const Banner = () => {
     return ( 
-        <div className="banner">
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ type: "spring", duration: 1, delay: 0.5}}
-            >
-                Welcome to Genesis360, where we're revolutionizing the way food security is approached in Africa. With a focus on empowering both food businesses and consumers, we provide innovative financing solutions designed to bridge the gap between supply and demand, ensuring access to nutritious food for all.
-            </motion.p>
+        <div className="banner-inner">
+            <div className="banner">
+                <div className="banner-component">
+                    <div className="banner-top">
+                        <h4>Trusted by millions of users in Nigeria</h4>
+                    </div>
+                    <div className="banner-bottom">
+                        <p>A customer base of over 5 million is a testament to the growing adoption of Genesis360’s fintech solutions among Nigerians.</p>
+                    </div>
+                </div>
+                {aboutData.map((data)=>{
+                    return(
+                        <AboutCard
+                            title={data.title}
+                            total={data.total}
+                            position={data.position}
+                        />
+                    )
+                })}
+            </div>
+            <div className="banner banner-mobile">
+                <div className="banner-component">
+                    <div className="banner-top">
+                        <h4>Trusted by millions of users in Nigeria</h4>
+                    </div>
+                    <div className="banner-bottom">
+                        <p>A customer base of over 5 million is a testament to the growing adoption of Genesis360’s fintech solutions among Nigerians.</p>
+                    </div>
+                </div>
+                <div className="about-cards">
+                    {aboutData.map((data)=>{
+                        return(
+                            <AboutCard
+                                title={data.title}
+                                total={data.total}
+                                position={data.position}
+                            />
+                        )
+                    })}
+                </div>
+            </div>
         </div>
     );
 }

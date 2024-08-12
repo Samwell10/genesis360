@@ -3,6 +3,16 @@ import profile2 from "../Assets/profile22.jpg";
 import profile3 from "../Assets/profile3.jpg";
 import profile4 from "../Assets/profile4.jpg";
 import profile5 from "../Assets/profile5.jpg";
+import kellogs from "../Assets/kellogs.png";
+import collgate from "../Assets/collgate.png";
+import unilever from "../Assets/unilever.png";
+import sonia from "../Assets/sonia.png";
+import dufile from "../Assets/dufile.png";
+import up7 from "../Assets/7up.png";
+import kembiley from "../Assets/kembiley.png";
+import checkers from "../Assets/checkers.png";
+import fmn from "../Assets/fmn.png";
+import wilmar from "../Assets/wilmar.png";
 export const testimonydata =[
     {
         Image: profile1,
@@ -38,5 +48,89 @@ export const testimonydata =[
         username: "@thecatering",
         testimony: "Genesis360 has been a game changer! The flexible repayment options and smooth logistics make everything so much easier. Plus, the discounts are amazing. Highly recommend!",
         date: "15:34pm . Jun 2, 2023"
+    },
+]
+
+export const aboutData = [
+    {
+        title:"Account Opened",
+        total: "500K+",
+        position: "top"
+    },
+    {
+        title:"Loan Application per Day",
+        total: "8K+",
+        position: "center bottom"
+    },
+    {
+        title:"Transaction Processed Monthly",
+        total: "200K+",
+        position: "right"
+    },
+    {
+        title:"Grocery Purchase",
+        total: "₦4M+",
+        position: "top"
+    },
+    {
+        title:"Upto Savings on Genesis360",
+        total: "₦1K+",
+        position: "left"
+    }
+]
+
+export const sponsorData = [
+    {
+        image: kellogs
+    },
+    {
+        image: collgate
+    },
+    {
+        image: unilever
+    },
+    {
+        image: sonia
+    },
+    {
+        image: dufile
+    },
+    {
+        image: up7
+    },
+    {
+        image: kembiley
+    },
+    {
+        image: checkers
+    },
+    {
+        image: fmn
+    },
+    {
+        image: wilmar
+    },
+]
+
+export const goalsData = [
+    {
+        title:"Saving",
+        body: "Effortlessly grow your wealth with high-interest savings options tailored to your goals.",
+        color: "#183D36"
+    },
+    {
+        title:"Digital Wallet",
+        body: "Manage your money with ease using our digital wallet for swift transactions and secure payments.",
+        color: "#38D79F"
+    },
+    {
+        title:"Investment",
+        body: "Explore diverse investment opportunities with potential returns and minimal risk.",
+        color: "#0180CD"
+    },
+    {
+        title:"Bill Payment",
+        body: "Pay bills seamlessly and securely with our easy-to-use platform, from utilities to subscriptions.",
+        color: "#FF0000"
     },
 ]

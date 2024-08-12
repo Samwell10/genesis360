@@ -1,0 +1,22 @@
+.sponsor-outer{
+    padding: 10rem 0rem;
+}
+.sponsor-header{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #183D36;
+}
+.sponsor{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+.sponsor img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

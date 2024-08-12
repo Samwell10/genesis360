@@ -23,11 +23,15 @@ export const Navbar = () => {
                 <div className="nav-close" onClick={handleNav}>
                     <FaTimes/>
                 </div>
-                <p className="nav-text"><Link to="/blog">Learn</Link></p>
-                <div className="store-buttons">
-                    <img src={appstore}></img>
-                    <img src={googlplay}></img>
-                </div>
+                <p className="nav-text"><Link to="/blog">Company</Link></p>
+                <p className="nav-text"><Link to="/blog">Products</Link></p>
+                <p className="nav-text"><Link to="/blog">Calculator</Link></p>
+                <p className="nav-text"><Link to="/blog">News & Blog</Link></p>
+                <p className="nav-text"><Link to="/blog">FAQs</Link></p>
+                <p className="nav-text"><Link to="/blog">Contact Us</Link></p>
+                <button className="store-buttons">
+                    Download App
+                </button>
             </div>
         </div>
     );

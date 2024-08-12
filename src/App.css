@@ -13,3 +13,8 @@ body{
 .spinner{
   width: 30%;
 }
+@media (max-width:800px) {
+  body{
+    background-color: #F3F8FF;
+  }
+}
