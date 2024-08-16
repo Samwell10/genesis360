@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import { ProductBusinessHeader } from "../../Components/Header/Header";
 import More from "../../Components/More/More";
 import { Navbar } from "../../Components/Navbar/Navbar";
+import { Action } from "../../Components/Suscribe/Suscribe";
 
 const ProductBusiness = () => {
     return ( 
@@ -13,6 +14,7 @@ const ProductBusiness = () => {
             <ProductBusinessBanner/>
             <ProductBusinessBanner2/>   
             <Eligibility/>
+            <Action/>
             <More/>
             <Footer/>
         </div>

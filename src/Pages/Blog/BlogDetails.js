@@ -3,7 +3,7 @@ import { NavbarBlog } from "../../Components/Navbar/Navbar";
 import { RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
 import './Blog.css'
 // import blogimage from "../Assets/blogimg.png"
-import Suscribe from "../../Components/Suscribe/Suscribe";
+import{ Suscribe} from "../../Components/Suscribe/Suscribe";
 import Footer from "../../Components/Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";

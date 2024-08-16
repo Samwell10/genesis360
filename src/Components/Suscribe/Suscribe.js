@@ -1,5 +1,5 @@
 import "./Suscribe.css"
-const Suscribe = () => {
+export const Suscribe = () => {
     return ( 
         <div className="suscribe">
             <h4>Get More From Genesis360</h4>
@@ -16,4 +16,11 @@ const Suscribe = () => {
     );
 }
  
-export default Suscribe;
+export const Action = () => {
+    return ( 
+        <div className="suscribe action">
+            <h4>Get a Business Loan Today</h4>
+            <button>Get Started</button>
+        </div>
+    );
+}

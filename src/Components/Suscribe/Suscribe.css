@@ -6,16 +6,34 @@
     align-items: center;
     background-color: #EAEAEA;
 }
+.action{
+    padding: 5rem 0rem;
+    background-color: #DFE5FF;
+}
+
 .suscribe h4{
     font-size: 2rem;
     font-size: 700;
     color: #183D36;
     margin-bottom: 10px;
 }
+.action h4{
+    font-size: 3rem;
+}
 .suscribe p{
     font-size: 1.25rem;
     font-size: 700;
     color: #183D36;
+}
+.action button{
+    margin-top: 20px;
+    background-color: #183D36;
+    border: none;
+    border-radius: 10px;
+    padding: 0.625rem 4.625rem;
+    font-size: 1.9rem;
+    font-size: 700;
+    color: white;
 }
 .suscribe-form{
     margin-top: 15px;
@@ -41,9 +59,15 @@
     .suscribe h4{
         text-align: center;
         font-size: 1.8rem;
-        font-size: 700;
+        font-weight: 700;
         color: #183D36;
         margin-bottom: 10px;
+    }
+    .action h4{
+        font-size: 1.5rem;
+    }
+    .action button{
+        font-size: 1.2rem;
     }
     .suscribe p{
         text-align: center;
