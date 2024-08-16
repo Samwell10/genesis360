@@ -6,6 +6,30 @@
     grid-template-rows: 445px 445px;
     grid-gap: 30px;
 }
+.product-business-banner{
+    background-color: #DFE5FF;
+    padding: 5.75rem 6.375rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.product-banner-content p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #183D36;
+}
+.product-banner-content h4{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #183D36;
+}
 .banner-mobile{
     display: none;
 }
@@ -26,6 +50,47 @@
 .banner-bottom p{
     font-size: 1.2rem;
 }
+.business-section{
+    padding: 12.5rem 0rem;
+}
+.business-section-inner{
+    padding: 4rem;
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(4, 480px);
+    grid-template-rows: 360px;
+    gap: 30px;
+}
+.business-section-inner::-webkit-scrollbar{
+    width: 0px;
+}
+.business-section-card{
+    padding: 3.1rem 2rem;
+    background-color: #DFE5FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.business-section-card img{
+    width: 50px;
+    height: 50px;
+}
+.business-section-card h4{
+    margin-top: 50px;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #183D36;
+}
+.business-section-card p{
+    margin-top: 10px;
+    height: 100px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #183D36;
+}
 @media (max-width:1300px) {
     .banner{
         padding: 0rem 4.5rem ;
@@ -37,6 +102,15 @@
     }
     .banner-bottom p{
         font-size: 1rem;
+    }
+    .product-banner-content p{
+        font-size: 1.5rem;
+    }
+    .product-banner-content h4{
+        font-size:  3rem;
+    }
+    .business-section{
+        padding: 12.5rem 0rem ;
     }
 }
 @media (max-width:1200px) {
@@ -52,6 +126,29 @@
     }
     .banner-bottom p{
         font-size: 0.8rem;
+    }
+    .product-banner-content p{
+        font-size: 1.2rem;
+    }
+    .product-banner-content h4{
+        font-size:  2.5rem;
+    }
+    .business-section-inner{
+        grid-template-columns: repeat(4, 450px);
+        grid-template-rows: 340px;
+    }
+    .business-section-card h4{
+        margin-top: 50px;
+        font-size: 2rem;
+        font-weight: 800;
+        color: #183D36;
+    }
+    .business-section-card p{
+        margin-top: 10px;
+        height: 100px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #183D36;
     }
 }
 @media (max-width:800px) {
@@ -71,5 +168,35 @@
     }
     .about-cards div{
         margin-top: 20px;
+    }
+    .product-business-banner{
+        padding: 2.5rem 2rem ;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .product-banner-content p{
+        font-size: 1.3rem;
+    }
+    .product-banner-content h4{
+        font-size:  3.5rem;
+    }
+    .business-section{
+        padding: 6.25rem 0rem ;
+    }
+    .business-section-inner{
+        padding: 1rem;
+        grid-template-columns: repeat(4, 302px);
+        grid-template-rows: 273px;
+    }
+    .business-section-card h4{
+        font-size: 1.25rem;
+    }
+    .business-section-card p{
+        margin-top: 10px;
+        height: 100px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #183D36;
     }
 }

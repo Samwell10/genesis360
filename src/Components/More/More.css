@@ -31,14 +31,26 @@
         padding: 5rem 2rem;
    }
    .more-inner{
-        padding: 1rem;
+        flex-direction: column;
+        padding: 3.4rem 2rem;
     }
     .more-text{
-        width: 70%;
+        width: 100%;
     }
     .more-text p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 800;
         color: white;
+        text-align: center;
     }
+    .more-buttons{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+    }
+    .more-buttons img{
+        width: 60%;
+    }
+
 }

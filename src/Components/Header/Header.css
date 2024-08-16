@@ -9,6 +9,13 @@
     background-position: bottom;
     background-size: 100% 80%; */
 }
+.product-header{
+    background-color: #F3F8FF;
+    background-image: url("../../Assets/background3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
 .header-info{
     width: 50%;
 }
@@ -19,18 +26,24 @@
 .header-info-bottom{
     margin-top: 40px;
 }
-.header-info h4{
+/* .header-left h4{
+    max-width: 886px;
+} */
+.header-info h4, .header-left h4{
     font-size: 3.5rem;
     font-weight: 700;
     text-align: left;
     color: #183D36;
 }
-.header-info p{
+.header-info p, .header-left p{
     color: #183D36;
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: 400;
     text-align: left;
+}
+.product-download-buttons{
+    margin-top: 20px;
 }
 .download-buttons{
     margin-top: 10px;

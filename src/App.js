@@ -1,8 +1,10 @@
 import './App.css';
-import Blog from './Blog/Blog';
-import BlogDetails from './Blog/BlogDetails';
-import Home from './Home/Home';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import BlogDetails from './Pages/Blog/BlogDetails';
+import Blog from "./Pages/Blog/Blog"
+import ProductBusiness from './Pages/ProductBusiness/ProductBusiness';
 function App() {
   return (
     <BrowserRouter>
@@ -10,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/blog' element={<Blog/>}></Route>
+          <Route path='/product-business' element={<ProductBusiness/>}></Route>
           <Route path='/blog-details/:id' element={<BlogDetails/>}></Route>
         </Routes>
       </div>

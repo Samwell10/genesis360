@@ -67,3 +67,41 @@
     border: 1px solid #000000;
     background-color: #DFE5FF;
 }
+@media (max-width:800px) {
+    .section{
+        padding: 0rem 0rem 6.25rem 0rem;
+    }
+    .section-header{
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        font-size: 2rem;
+    }
+    .section-inner{
+        grid-template-columns: 301px 301px 301px 301px;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .section-card{
+        padding: 1.75rem 1.56rem;
+        background-color: #DFE5FF;
+        height: 345px;
+    }
+    .section-card h4{
+        font-size: 1.5rem;
+    }
+    .section-card p{
+        font-size: 1rem;
+    }
+    .section-card button{
+        padding: 0.625rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .section-control{
+        margin-top: 27px;
+        gap: 15px;
+    }
+    .section-button{
+        width: 37px;
+        height: 37px;   
+    }
+}

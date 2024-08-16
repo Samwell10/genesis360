@@ -13,6 +13,10 @@ import kembiley from "../Assets/kembiley.png";
 import checkers from "../Assets/checkers.png";
 import fmn from "../Assets/fmn.png";
 import wilmar from "../Assets/wilmar.png";
+import cash from "../Assets/cash.png";
+import checklist from "../Assets/checklist.png";
+import revenue from "../Assets/revenue.png"
+import shop from "../Assets/shop.png";
 export const testimonydata =[
     {
         Image: profile1,
@@ -132,5 +136,59 @@ export const goalsData = [
         title:"Bill Payment",
         body: "Pay bills seamlessly and securely with our easy-to-use platform, from utilities to subscriptions.",
         color: "#FF0000"
+    },
+]
+
+export const whyData = [
+    {
+        title:"Up to NGN 5 Million",
+        body: "Access loans up to NGN 5 million to grow your business.",
+        icon: cash
+    },
+    {
+        title:"Long-Term Loans ",
+        body: "Benefit from extended repayment terms with loans up to 6 months.",
+        icon: checklist
+    },
+    {
+        title:"Good Interest Rate",
+        body: "Enjoy our loans with competitive interest rates, designed to support your business growth.",
+        icon: revenue
+    },
+    {
+        title:"SME Loan in 24 Hours",
+        body: "Get the funds you need for your business in just 24 hours.",
+        icon: shop
+    },
+]
+
+export const eligibilityData = [
+    {
+        id: 1,
+        body: "6 months Statement of Account.",
+    },
+    {
+        id: 2,
+        body: "Valid ID Card",
+    },
+    {
+        id: 3,
+        body: "Proof of Address",
+    },
+    {
+        id: 4,
+        body: "Bank Verification Number (BVN)",
+    },
+    {
+        id: 5,
+        body: "CAC Document (For Registered Business)",
+    },
+    {
+        id: 6,
+        body: "Passport Photography or Selfie",
+    },
+    {
+        id: 7,
+        body: "Age must be between 22 and 65",
     },
 ]

@@ -1,0 +1,77 @@
+.eligibility{
+    padding: 0rem 6.375rem 12.5rem 6.375rem;
+}
+.eligibility-component{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.eligibility-inner{
+    /* width: 383px; */
+    /* height: 378px; */
+    padding: 3rem 2.6rem;
+    background-color: #FFFFFF;
+    border: 1px #000000 solid;
+}
+.eligibility-inner h4{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #183D36;
+}
+.eligibility-inner p{
+    margin-top: 70px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #183D36;
+    height: 135px;
+}
+@media (max-width:1300px) {
+    .eligibility-inner{
+        padding: 2.1rem 2.2rem;
+    }
+    .eligibility-inner h4{
+        font-size: 2.5rem;
+    }
+    .eligibility-inner p{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:1200px) {
+    .eligibility-inner{
+        padding: 1.5rem 1.5rem;
+    }
+    .eligibility-inner h4{
+        font-size: 2rem;
+    }
+    .eligibility-inner p{
+        font-size: 1rem;
+        margin-top: 50px;
+        height: 90px;
+    }
+}
+
+@media (max-width:800px) {
+    .eligibility{
+        padding: 0rem 1.8rem 6.25rem 1.8rem;
+    }
+    .eligibility-component{
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .eligibility-inner{
+        padding: 0.8rem 0.9rem;
+    }
+    .eligibility-inner h4{
+        font-size: 2rem;
+    }
+    .eligibility-inner p{
+        font-size: 1rem;
+        margin-top: 37px;
+        height: 60px;
+    }
+}

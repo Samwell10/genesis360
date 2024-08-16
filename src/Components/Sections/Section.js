@@ -41,7 +41,7 @@ const Section = () => {
                         transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     >
                         <h4>{data.title}</h4>
-                        <div>
+                        <div> 
                             <p>{data.body}</p>
                             <button 
                                 style={{"backgroundColor":`${data.color}`}}

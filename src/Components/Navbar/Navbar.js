@@ -24,7 +24,7 @@ export const Navbar = () => {
                     <FaTimes/>
                 </div>
                 <p className="nav-text"><Link to="/blog">Company</Link></p>
-                <p className="nav-text"><Link to="/blog">Products</Link></p>
+                <p className="nav-text"><Link to="/product-business">Products</Link></p>
                 <p className="nav-text"><Link to="/blog">Calculator</Link></p>
                 <p className="nav-text"><Link to="/blog">News & Blog</Link></p>
                 <p className="nav-text"><Link to="/blog">FAQs</Link></p>
