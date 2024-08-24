@@ -8,6 +8,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+.loan-eligibility .eligibility-component{
+    grid-template-columns: repeat(3, 1fr);
+}
 .eligibility-inner{
     /* width: 383px; */
     /* height: 378px; */
@@ -63,6 +66,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+    .loan-eligibility .eligibility-component{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .eligibility-inner{
         padding: 0.8rem 0.9rem;
     }
@@ -71,7 +77,12 @@
     }
     .eligibility-inner p{
         font-size: 1rem;
-        margin-top: 37px;
+        margin-top: 30px;
         height: 60px;
+    }
+    .loan-eligibility .eligibility-inner p, .loan-requirement .eligibility-inner p{
+        font-size: 0.8rem;
+        margin-top: 30px;
+        height: 80px;
     }
 }

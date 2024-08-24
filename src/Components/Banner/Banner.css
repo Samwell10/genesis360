@@ -6,6 +6,10 @@
     grid-template-rows: 445px 445px;
     grid-gap: 30px;
 }
+.loan-banner{
+    padding-bottom: 7rem;
+    grid-template-rows: 380px 380px;
+}
 .product-business-banner{
     background-color: #DFE5FF;
     padding: 5.75rem 6.375rem ;
@@ -35,9 +39,13 @@
 }
 .banner-component{
 }
+
 .banner-top, .banner-bottom{
     background-color: #DFE5FF;
     padding: 2.4rem ;
+}
+.loan-banner-top{
+    background-color: transparent;
 }
 .banner-bottom{
     margin-top: 30px;
@@ -46,6 +54,9 @@
     color: #183D36;
     font-size: 2.5rem;
     font-weight: 700;
+}
+.loan-banner-top h4{
+    font-size: 3rem;
 }
 .banner-bottom p{
     font-size: 1.2rem;
@@ -84,12 +95,127 @@
     font-weight: 800;
     color: #183D36;
 }
+.loan-section-card h4{
+    font-size: 2rem;
+}
 .business-section-card p{
     margin-top: 10px;
     height: 100px;
     font-size: 1.5rem;
     font-weight: 400;
     color: #183D36;
+}
+.investment-banner{
+    display: flex;
+    padding-bottom: 7rem;
+}
+.investment-banner-left{
+    background-color: #90DD3E;
+    padding: 5rem 6rem;
+    width: 55%;
+}
+.investment-banner-right{
+    width: 45%;
+}
+.investment-banner-left h4{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.investment-banner-left p{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #183D36;
+}
+.investment-banner-right img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.wallet-banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    padding: 5rem 0rem 10rem 0rem;
+}
+.wallet-banner-left, .wallet-banner-right{
+    width: 50%;
+}
+.wallet-banner-left{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 0px 50px 50px 0px;
+}
+.wallet-banner-right{
+    padding: 0rem 6.375rem 0rem 0rem ;
+}
+.wallet-banner-left img{
+    width: 42%;
+}
+.wallet-banner-right h4{
+    font-size: 4rem;
+    font-size: 700;
+    color:#183D36;
+}
+.wallet-banner-right p{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 400;
+    color:#183D36;
+}
+.market-banner{
+    padding: 0rem 6.25rem 10rem 6.525rem;
+}
+.market-banner-header{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #183D36;
+    width:60%;  
+}
+.market-banner-top{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.market-banner-top div{
+    width: calc(100% / 2);
+}
+.market-banner-bottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.market-banner-bottom div{
+    background-color: #DFE5FF;
+    width: calc(100% / 3);
+}
+.market-banner-card{
+    padding: 2.9rem 2rem;
+    background-color: #DEEDED;
+    border-radius: 20px;
+}
+.market-banner-card img{
+    width: 15%;
+}
+.market-banner-card h4{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #183D36;
+    margin-top: 30px;
+}
+.market-banner-card p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #183D36;
+    margin-top: 10px;
 }
 @media (max-width:1300px) {
     .banner{
@@ -112,11 +238,29 @@
     .business-section{
         padding: 12.5rem 0rem ;
     }
+    .wallet-banner-left{
+        height: 350px;
+    }
+    .wallet-banner-right h4{
+        font-size: 3.5rem;
+    }
+    .wallet-banner-right p{
+        font-size: 1.2rem;
+    }
+    .market-banner-card p{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #183D36;
+        margin-top: 10px;
+    }
 }
 @media (max-width:1200px) {
     .banner{
         grid-template-rows: 300px 300px;
         grid-gap: 15px;
+    }
+    .market-banner{
+        padding: 0rem 4.5rem 10rem 4.5rem;
     }
     .banner-top, .banner-bottom{
         padding: 1.4rem ;
@@ -150,6 +294,38 @@
         font-weight: 400;
         color: #183D36;
     }
+    .investment-banner-left{
+        background-color: #90DD3E;
+        padding: 3rem 4rem;
+    }
+    .investment-banner-left h4{
+        font-size: 2.5rem;
+    }
+    .investment-banner-left p{
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+    .wallet-banner-right{
+        padding: 0rem 4.5rem 0rem 0rem ;
+    }
+    .wallet-banner-right h4{
+        font-size: 2.5rem;
+    }
+    .wallet-banner-right p{
+        font-size: 1rem;
+    }
+    .market-banner-header{
+        font-size: 2.5rem;  
+    }
+    .market-banner-card{
+        padding: 2.4rem 1.8rem;
+    }
+    .market-banner-card h4{
+        font-size: 1.5rem;
+    }
+    .market-banner-card p{
+        font-size: 0.8rem;
+    }
 }
 @media (max-width:800px) {
     .banner{
@@ -159,15 +335,29 @@
         display: block;
         padding: 6.25rem 1.8rem 0rem  1.8rem ;
     }
+    .loan-banner-top{
+        padding: 0rem;
+    }
+    .loan-banner-top h4{
+        text-align: left;
+    }
     .about-cards{
         overflow-x: scroll;
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(5, 301px);
         /* grid-template-rows: 288px; */
         grid-gap: 20px;
     }
+    .loan-about-cards{
+        margin-top: 20px;
+        grid-template-rows: 243px;
+    }
     .about-cards div{
         margin-top: 20px;
+    }
+    .loan-about-cards div{
+        margin-top: 0px;
     }
     .product-business-banner{
         padding: 2.5rem 2rem ;
@@ -189,6 +379,9 @@
         grid-template-columns: repeat(4, 302px);
         grid-template-rows: 273px;
     }
+    .business-section-card{
+        padding: 2rem 1.5rem;
+    }
     .business-section-card h4{
         font-size: 1.25rem;
     }
@@ -198,5 +391,81 @@
         font-size: 1rem;
         font-weight: 400;
         color: #183D36;
+    }
+    .investment-banner{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding-bottom: 7rem;
+    }
+    .investment-banner-left, .investment-banner-right{
+        width: 100%;
+        height: 100%;
+    }
+    .investment-banner-left{
+        margin-top: -5px;
+        padding: 2.9rem 2.18rem;
+    }
+    .investment-banner-left h4{
+        font-size: 1.5rem;
+    }
+    .investment-banner-left p{
+        font-size: 1rem;
+    }
+    .investment-banner-right img{
+        width: 100%;
+        object-fit:cover;
+    }
+    .wallet-banner{
+        flex-direction: column;
+        padding: 5rem 0rem 5rem 0rem;
+    }
+    .wallet-banner-right{
+        padding: 0rem 1.8rem 0rem 1.8rem ;
+    }
+    .wallet-banner-left, .wallet-banner-right{
+        width: 100%;
+    }
+    .wallet-banner-left{
+        height: 250px;
+        margin-right: 2rem;
+    }
+    .market-banner{
+        padding: 0rem 1.8rem 6.25rem 1.8rem;
+    }
+    .market-banner-header{
+        font-size: 2rem;
+        width:100%;  
+    }
+    .market-banner-top{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .market-banner-top div{
+        width: 100%;
+    }
+    .market-banner-bottom{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .market-banner-bottom div{
+        background-color: #DEEDED;
+        width: 100%;
+    }
+    .market-banner-card{
+        padding: 1.18rem 1rem;
+        border-radius: 5px;
+    }
+    .market-banner-card img{
+        width: 12%;
+    }
+    .market-banner-card h4{
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+    .market-banner-card p{
+        font-size: 0.8rem;
     }
 }

@@ -13,6 +13,9 @@ body{
 .spinner{
   width: 30%;
 }
+.utility, .investment, .wallet,.marketplace, .contact{
+  background-color: #F3F8FF;
+}
 @media (max-width:800px) {
   body{
     background-color: #F3F8FF;

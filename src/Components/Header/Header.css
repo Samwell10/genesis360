@@ -9,6 +9,23 @@
     background-position: bottom;
     background-size: 100% 80%; */
 }
+.loan-header{
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.utility-header{
+    padding: 8.25rem 6.375rem ;
+    display: flex;
+    align-items: center;
+}
+.investment-header{
+    gap: 103px;
+    justify-content: space-between;
+}
+.market-header{
+    gap: 250px;
+}
 .product-header{
     background-color: #F3F8FF;
     background-image: url("../../Assets/background3.png");
@@ -26,9 +43,74 @@
 .header-info-bottom{
     margin-top: 40px;
 }
-/* .header-left h4{
-    max-width: 886px;
-} */
+.utility-header-left{
+    width: 60%;
+}
+.investment-header-left, .investment-header-right, .wallet-header-right, .loan-header-right, .loan-header-left{
+    width: 50%;
+}
+.loan-header-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.loan-circle{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom:  0;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background-color: #90DD3E;
+    border-radius: 50%;
+}
+.utility-header-right{
+    width: 40%;
+}
+.utility-header-right img, .investment-header-right img{
+    width: 100%;
+}
+.loan-header-right img{
+    width: 80%;
+    z-index: 2;
+}
+.wallet-header-right img{
+    width: 100%;
+}
+.investment-header-right img{
+    width: 100%;
+    height: 550px ;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.investment-header-right{
+    padding: 1.75rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.market-header-right{
+    height: 500px;
+    position: relative;
+    z-index: 2;
+}
+.market-header-right::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    border: 2px dashed rgb(55, 55, 55);
+}
+.market-header-right img{
+    height: 100%;
+    z-index: 4;
+    object-fit: cover;
+    border-radius: 20px;
+}
 .header-info h4, .header-left h4{
     font-size: 3.5rem;
     font-weight: 700;
@@ -42,8 +124,14 @@
     font-weight: 400;
     text-align: left;
 }
+.utility-header-left p, .investment-header-left p{
+    width: 540px;
+}
 .product-download-buttons{
     margin-top: 20px;
+}
+.utility-download-buttons{
+    margin-top: 30px;
 }
 .download-buttons{
     margin-top: 10px;
@@ -53,6 +141,9 @@
 .download-buttons img{
     width: 25%;
 }
+.utility-download-buttons img{
+    width: 20%;
+}
 .header-image{
     width: 50%;
 }
@@ -61,6 +152,24 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.utility-banner{
+    margin-top: 81px;
+    padding: 1.2rem;
+    background-color: #DFE5FF;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 13px;
+    overflow-y: hidden;
+}
+.utility-banner::-webkit-scrollbar{
+    width: 0%;
+}
+.utility-banner img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 @media (max-width: 1290px) {
     .header-info-top, .header-info-bottom{
@@ -72,10 +181,35 @@
     .header-info p, .header-left p{
         font-size: 1.2rem;
     }
+    .header{
+        padding: 15.25rem 6.375rem ;
+    }
 }
 @media (max-width: 1130px) {
     .header{
         padding: 12.25rem 4.5rem ;
+    }
+    .utility-header{
+        padding: 8.25rem 4.5rem ;
+    }
+    .loan-circle{
+        z-index: 1;
+        width: 400px;
+        height: 400px;
+    }
+    .investment-header{
+        gap: 50px;
+    }
+    .investment-header-left p{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .investment-header-right img{
+        width: 100%;
+        height: 400px ;
+    }
+    .investment-header-right{
+        padding: 1rem;
     }
     .header-info h4, .header-left h4{
         font-size: 2.5rem;
@@ -92,6 +226,41 @@
     .product-header{
         padding: 18rem 1.8rem 2.1rem 1.8rem;
         background-position: 0rem 4rem;
+    }
+    .utility-header{
+        padding: 2.1rem 1.8rem ;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .investment-header{
+        padding: 7.1rem 1.8rem;
+    }
+    .loan-header{
+        padding: 7.1rem 1.8rem 0rem 1.8rem;
+    }
+    .utility-header-left, .loan-header-left, .loan-header-right, .investment-header-left, .investment-header-right, .utility-header-right, .wallet-header-right{
+        width: 100%;
+    }
+    .loan-circle{
+        width: 300px;
+        height: 300px;
+    }
+    .utility-header-right img{
+        width: 100%;
+        height: 500px;
+    }
+    .investment-header-right img{
+        width: 100%;
+        height: 340px ;
+    }
+    .investment-header-right{
+        padding: 0.8rem;
+    }
+    .utility-header-left p{
+        width: 100%;
+    }
+    .utility-banner{
+        margin-top: 20px;
     }
     .header-info-top, .header-info-bottom{
         padding: 0.95rem 1rem;
