@@ -219,7 +219,7 @@
 }
 @media (max-width:1300px) {
     .banner{
-        padding: 0rem 4.5rem ;
+        padding: 0rem 4.5rem 5rem 4.5rem;
         grid-template-rows: 350px 350px;
         grid-gap: 20px;
     }
@@ -293,6 +293,12 @@
         font-size: 1.5rem;
         font-weight: 400;
         color: #183D36;
+    }
+    .loan-section-card h4{
+        font-size: 1.5rem;
+    }
+    .loan-section-card p{
+        font-size: 0.8rem;
     }
     .investment-banner-left{
         background-color: #90DD3E;

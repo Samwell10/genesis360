@@ -42,6 +42,11 @@ import login from "../Assets/login.png"
 import process from "../Assets/process.png"
 import done from "../Assets/done.png"
 import offer from "../Assets/offer.png"
+import percentage from "../Assets/percentage.png"
+import withdrawal from "../Assets/withdrawal.png"
+import tenure from "../Assets/tenure.png"
+import deposit from "../Assets/deposit.png"
+import security from "../Assets/security.png"
 import { MdOutlinePermPhoneMsg } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 export const navbaritems = [
@@ -53,7 +58,8 @@ export const navbaritems = [
         title:"Products",
         submenu:[
             {
-                title:"Savings"
+                title:"Savings",
+                link:"/saving"
             },
             {
                 title:"loans",
@@ -272,6 +278,34 @@ export const whyData2 = [
         title:"24/7 Access",
         body: "Apply for a loan anytime, anywhere with our user-friendly app. ",
         icon: shop
+    },
+]
+
+export const whyData3 = [
+    {
+        title:"Up to 24% pa",
+        body: "Maximize your savings with one of the highest interest rates of up tp 24%  in the market.",
+        icon: percentage
+    },
+    {
+        title:"Auto Withdrawal",
+        body: "Enjoy hassle-free access to your funds as they are automatically transferred upon maturity.",
+        icon: withdrawal
+    },
+    {
+        title:"Flexible Tenures",
+        body: "Choose a savings term that fits your financial goals, from as short as 7 days to as long as 2 years.",
+        icon: tenure
+    },
+    {
+        title:"Multiple Deposit Plans",
+        body: "Customize your savings strategy with multiple plans to meet different financial objectives.",
+        icon: deposit
+    },
+    {
+        title:"Security and Reliability",
+        body: "Trust in our robust security measures and reliable platform to keep your funds safe.",
+        icon: security 
     },
 ]
 

@@ -6,9 +6,14 @@ import utilityImage from "../../Assets/utility.png"
 import investmentImage from "../../Assets/investmentHeader.png"
 import marketimage from "../../Assets/marketplace.png"
 import loanImage from "../../Assets/loan.png"
+import SavingImage from "../../Assets/SavingImage.png";
 import walletImage from "../../Assets/wallet (1).png"
+import cbn from "../../Assets/cbn.png";
+import ndic from "../../Assets/cf76315219ed108a9c89fb6a00fa2184.png"
 import { motion } from "framer-motion";
 import { utilityData } from "../data";
+
+
 export const Header = () => {
     return (
         <div className="header">
@@ -67,7 +72,6 @@ export const Header = () => {
         </div>
     );
 }
-
 export const ProductBusinessHeader = () =>{
     return(
         <div className="header product-header">
@@ -107,7 +111,6 @@ export const ProductBusinessHeader = () =>{
         </div>
     )
 }
-
 export const UtilityHeader = () =>{
     return(
         <div className="utility-header">
@@ -271,7 +274,6 @@ export const MarketHeader = () =>{
         </div>
     )
 }
-
 export const LoanHeader = () =>{
     return(
         <div className="header loan-header">
@@ -314,4 +316,51 @@ export const LoanHeader = () =>{
         </div>
     )
 }
- 
+export const SavingHeader = () =>{
+    return(
+        <div className="header saving-header">
+            <div className="header-left investment-header-left">
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                >
+                   Unlock Financial Potential and Your Financial Goals Faster with Genesis360
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                >
+                   Genesis360 is your ultimate partner in achieving financial freedom and reaching your goals faster with our innovative savings solutions. Our platform is designed to help you grow your wealth securely and efficiently, taking advantage of high interest rates and a disciplined savings approach to secure your future.
+                </motion.p>
+                <div className="download-buttons saving-download-buttons">
+                    <motion.button 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
+                    >
+                        Get Started
+                    </motion.button>
+                    <div>
+                        <motion.img 
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                            src={cbn}
+                        ></motion.img>
+                        <motion.img 
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                            src={ndic}
+                        ></motion.img>
+                    </div>
+                </div>
+            </div>
+            <div className="header-right wallet-header-right">
+                <img src={SavingImage}></img>
+            </div>
+        </div>
+    )
+}

@@ -1,0 +1,21 @@
+.terms-topic{
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.terms-inner{
+    padding: 12rem 6.25rem 0rem 6.25rem;
+}
+.terms-para{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #183D36;
+    margin-bottom: 20px;
+}
+.terms-head{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #183D36;
+    font-weight: 700;
+}

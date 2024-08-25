@@ -141,6 +141,29 @@
 .download-buttons img{
     width: 25%;
 }
+.saving-download-buttons button{
+    width: 300px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #183D36;
+    border: none;
+    border-radius: 10px;
+}
+.saving-download-buttons div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.saving-download-buttons div img{
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+}
 .utility-download-buttons img{
     width: 20%;
 }
@@ -283,5 +306,11 @@
     }
     .download-buttons img{
         width: 35%;
+    }
+    .saving-download-buttons{
+        display: block;
+    }
+    .saving-download-buttons button{
+        width: 100% ;
     }
 }

@@ -13,7 +13,7 @@ body{
 .spinner{
   width: 30%;
 }
-.utility, .investment, .wallet,.marketplace, .contact{
+.utility, .investment, .wallet,.marketplace, .contact, .terms, .loan, .saving{
   background-color: #F3F8FF;
 }
 @media (max-width:800px) {

@@ -1,5 +1,5 @@
 import AboutCard from "../Card/AboutCard";
-import { aboutData, whyData, whyData2 } from "../data";
+import { aboutData, whyData, whyData2, whyData3 } from "../data";
 import "./Banner.css"
 import InvestmentBannerr from "../../Assets/investmentbanner.png"
 import { motion } from "framer-motion";
@@ -223,6 +223,52 @@ export const LoanBanner = () =>{
                 </div>
                 <div className="about-cards loan-about-cards">
                 {whyData2.map((data)=>{
+                    return(
+                        <div className="business-section-card">
+                            <img src={data.icon}></img>
+                            <div>
+                                <h4>{data.title}</h4>
+                                <p>{data.body}</p>
+                            </div>
+                        </div>
+                    )
+                })}
+                </div>
+            </div>
+        </div>
+    );
+}
+export const SavingBanner = () =>{
+    return ( 
+        <div className="banner-inner">
+            <div className="banner loan-banner">
+                <div className="banner-component">
+                    <div className="banner-top loan-banner-top">
+                        <h4>Why Choose Genesis360?</h4>
+                    </div>
+                   
+                </div>
+                {whyData3.map((data)=>{
+                    return(
+                        <div className="business-section-card loan-section-card">
+                            <img src={data.icon}></img>
+                            <div>
+                                <h4>{data.title}</h4>
+                                <p>{data.body}</p>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+            <div className="banner banner-mobile">
+                <div className="banner-component">
+                    <div className="banner-top loan-banner-top">
+                        <h4>Why Borrow From Genesis360?</h4>
+                    </div>
+                   
+                </div>
+                <div className="about-cards loan-about-cards">
+                {whyData3.map((data)=>{
                     return(
                         <div className="business-section-card">
                             <img src={data.icon}></img>

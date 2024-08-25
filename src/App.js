@@ -11,6 +11,8 @@ import Wallet from './Pages/Wallet/Wallet';
 import Marketplace from './Pages/Marketplace/Marketplace';
 import Contact from './Pages/Contact/Contact';
 import Loan from './Pages/Loan/Loan';
+import Saving from './Pages/Saving/Saving';
+import Terms from './Pages/Terms/Terms';
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +26,8 @@ function App() {
           <Route path='/digital-wallet' element={<Wallet/>}></Route>
           <Route path='/loan' element={<Loan/>}></Route>
           <Route path='/marketplace' element={<Marketplace/>}></Route>
+          <Route path='/saving' element={<Saving/>}></Route>
+          <Route path='/terms' element={<Terms/>}></Route>
           <Route path='/contact-us' element={<Contact/>}></Route>
           <Route path='/blog-details/:id' element={<BlogDetails/>}></Route>
         </Routes>
