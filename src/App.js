@@ -13,6 +13,7 @@ import Contact from './Pages/Contact/Contact';
 import Loan from './Pages/Loan/Loan';
 import Saving from './Pages/Saving/Saving';
 import Terms from './Pages/Terms/Terms';
+import Policies from './Pages/Policies/Policies';
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
           <Route path='/marketplace' element={<Marketplace/>}></Route>
           <Route path='/saving' element={<Saving/>}></Route>
           <Route path='/terms' element={<Terms/>}></Route>
+          <Route path='/privacy' element={<Policies/>}></Route>
           <Route path='/contact-us' element={<Contact/>}></Route>
           <Route path='/blog-details/:id' element={<BlogDetails/>}></Route>
         </Routes>

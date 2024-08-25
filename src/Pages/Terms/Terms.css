@@ -12,10 +12,39 @@
     font-weight: 400;
     color: #183D36;
     margin-bottom: 20px;
+    text-align: justify;
 }
 .terms-head{
     font-size: 1.5rem;
     font-weight: 400;
     color: #183D36;
     font-weight: 700;
+}
+@media (max-width:1200px) {
+    .terms-inner{
+        padding: 12rem 4.5rem 0rem 4.5rem;
+    }
+}
+@media (max-width:800px) {
+    .terms-inner{
+        padding: 9rem 1.8rem 0rem 1.8rem;
+    }
+    .terms-topic{
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #183D36;
+    }
+    .terms-para{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #183D36;
+        margin-bottom: 20px;
+    }
+    .terms-head{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #183D36;
+        font-weight: 700;
+    }
 }

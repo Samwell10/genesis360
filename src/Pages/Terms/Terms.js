@@ -14,7 +14,7 @@ const Terms = () => {
                 <div className="terms-paragraph">
                     <p className="terms-head">1. Introduction</p>
                     <p className="terms-para">
-                    1.1 These terms and conditions govern your use of our website and mobile application.
+                    1.1 These terms and conditions govern your use of our website and mobile application.<br></br>
                     1.2 By using our website and application, you accept these terms and conditions in full.
                     </p>
                 </div>
@@ -27,21 +27,21 @@ const Terms = () => {
                 <div className="terms-paragraph">
                     <p className="terms-head">3. Account Registration</p>
                     <p className="terms-para">
-                    3.1 To access certain features, you must create an account by providing accurate and complete information.
+                    3.1 To access certain features, you must create an account by providing accurate and complete information.<br></br>
                     3.2 You are responsible for maintaining the confidentiality of your account information.
                     </p>
                 </div>
                 <div className="terms-paragraph">
                     <p className="terms-head">4. Services Provided</p>
                     <p className="terms-para">
-                    4.1 Genesis360 provides alternative financing for food businesses in Africa, allowing users to purchase food items and pay back in installments with little interest.
+                    4.1 Genesis360 provides alternative financing for food businesses in Africa, allowing users to purchase food items and pay back in installments with little interest.<br></br>
                     4.2 Additional services include savings, utility purchases, and investing opportunities for our users.
                     </p>
                 </div>
                 <div className="terms-paragraph">
                     <p className="terms-head">5. Payment and Fees</p>
                     <p className="terms-para">
-                    5.1 Users agree to pay back the amount due as per the agreed installment plan.
+                    5.1 Users agree to pay back the amount due as per the agreed installment plan.<br></br>
                     5.2 Failure to pay on time may result in additional fees and penalties.
                     </p>
                 </div>
@@ -54,7 +54,7 @@ const Terms = () => {
                 <div className="terms-paragraph">
                     <p className="terms-head">7. User Responsibilities</p>
                     <p className="terms-para">
-                        7.1 You agree not to use the website and application for any unlawful purpose.
+                        7.1 You agree not to use the website and application for any unlawful purpose.<br></br>
                         7.2 You agree not to attempt to gain unauthorized access to our systems or interfere with the proper functioning of the website and application.
                     </p>
                 </div>
