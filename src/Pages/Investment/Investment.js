@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Investment.css"
 import { InvestmentHeader } from "../../Components/Header/Header";
 import { Navbar } from "../../Components/Navbar/Navbar";
@@ -5,6 +6,9 @@ import More from "../../Components/More/More";
 import Footer from "../../Components/Footer/Footer";
 import { InvestmentBanner } from "../../Components/Banner/Banner";
 const Investment = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return ( 
         <div className="investment">
             <Navbar/>

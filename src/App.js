@@ -14,6 +14,8 @@ import Loan from './Pages/Loan/Loan';
 import Saving from './Pages/Saving/Saving';
 import Terms from './Pages/Terms/Terms';
 import Policies from './Pages/Policies/Policies';
+import Calculator from './Pages/Calculator/Calculator';
+import Faq from './Pages/Faq/Faq';
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +33,8 @@ function App() {
           <Route path='/terms' element={<Terms/>}></Route>
           <Route path='/privacy' element={<Policies/>}></Route>
           <Route path='/contact-us' element={<Contact/>}></Route>
+          <Route path='/calculator' element={<Calculator/>}></Route>
+          <Route path='/FAQs' element={<Faq/>}></Route>
           <Route path='/blog-details/:id' element={<BlogDetails/>}></Route>
         </Routes>
       </div>

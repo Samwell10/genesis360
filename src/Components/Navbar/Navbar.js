@@ -38,12 +38,6 @@ export const Navbar = () => {
                         })}
                     </ul>
                 </nav>
-                {/* <p className="nav-text"><Link to="/">Company</Link></p>
-                <p className="nav-text"><Link to="/product-business">Products</Link></p>
-                <p className="nav-text"><Link to="/blog">Calculator</Link></p>
-                <p className="nav-text"><Link to="/blog">News & Blog</Link></p>
-                <p className="nav-text"><Link to="/blog">FAQs</Link></p>
-                <p className="nav-text"><Link to="/blog">Contact Us</Link></p> */}
                 <button className="store-buttons">
                     Download App
                 </button>

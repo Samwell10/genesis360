@@ -1,5 +1,5 @@
 .section{
-    padding: 0rem 0rem 10rem 0rem;
+    padding: 6rem 0rem 7rem 0rem;
 }
 .section-header{
     padding: 0rem 6rem 0rem 6rem;
@@ -69,7 +69,7 @@
 }
 @media (max-width:800px) {
     .section{
-        padding: 0rem 0rem 6.25rem 0rem;
+        padding: 0rem 0rem 5rem 0rem;
     }
     .section-header{
         padding: 0rem 1.5rem 0rem 1.5rem;

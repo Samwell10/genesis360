@@ -16,11 +16,11 @@ a{
 .spinner{
   width: 30%;
 }
-.utility, .investment, .wallet,.marketplace, .contact, .terms, .loan, .saving{
+.utility, .investment, .wallet,.marketplace, .contact, .terms, .loan, .saving, .calculator-outer, .faq-outer{
   background-color: #F3F8FF;
 }
 @media (max-width:800px) {
   body{
     background-color: #F3F8FF;
   }
-}
+} 

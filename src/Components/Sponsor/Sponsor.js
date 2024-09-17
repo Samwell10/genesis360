@@ -4,16 +4,20 @@ const Sponsor = () => {
     return ( 
         <div className="sponsor-outer">
             <h3 className="sponsor-header">Trusted by over 1000+ businesses</h3>
-            <marquee width="100%" direction="right">
+            <div className="marquee">
                 <div className="sponsor">
                     {sponsorData.map((image)=>{
                         return(
                             <img src={image.image}></img>
                         )
                     })}
+                    {sponsorData.map((image)=>{
+                        return(
+                            <img src={image.image}></img>
+                        )
+                    })}
                 </div>
-            </marquee>
-          
+            </div>
         </div>
     );
 }

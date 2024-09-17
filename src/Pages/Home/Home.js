@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {Banner} from "../../Components/Banner/Banner";
 import Footer from "../../Components/Footer/Footer";
 import {Header} from "../../Components/Header/Header";
@@ -8,6 +9,9 @@ import Sponsor from "../../Components/Sponsor/Sponsor";
 import Testtimonial from "../../Components/Testtimonials/Testtimonial";
 
 const Home = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return ( 
         <div className="home">
             <Navbar/>

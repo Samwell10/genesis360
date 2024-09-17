@@ -238,6 +238,19 @@
     .business-section{
         padding: 12.5rem 0rem ;
     }
+    .business-section-card h4{
+        margin-top: 50px;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #183D36;
+    }
+    .business-section-card p{
+        margin-top: 10px;
+        height: 100px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #183D36;
+    }
     .wallet-banner-left{
         height: 350px;
     }
@@ -283,14 +296,14 @@
     }
     .business-section-card h4{
         margin-top: 50px;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 800;
         color: #183D36;
     }
     .business-section-card p{
         margin-top: 10px;
         height: 100px;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         font-weight: 400;
         color: #183D36;
     }
@@ -298,7 +311,7 @@
         font-size: 1.5rem;
     }
     .loan-section-card p{
-        font-size: 0.8rem;
+        font-size: 0.8rrem;
     }
     .investment-banner-left{
         background-color: #90DD3E;

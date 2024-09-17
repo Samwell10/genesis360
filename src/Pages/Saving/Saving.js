@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { SavingBanner } from "../../Components/Banner/Banner";
 import { startedData } from "../../Components/data";
 import Footer from "../../Components/Footer/Footer";
@@ -11,6 +12,9 @@ import target from "../../Assets/target.png"
 import tenure from "../../Assets/savetenure.png"
 import save from "../../Assets/ssaving.png"
 const Saving = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return ( 
         <div className="saving">
             <Navbar/>

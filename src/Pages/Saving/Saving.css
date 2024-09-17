@@ -1,5 +1,6 @@
 .saving-get-started{
-    padding: 6rem 6.25rem;
+    margin-top: 5rem;
+    padding: 5rem 6.25rem;
     background-color: #DFE5FF;
 }
 .saving-get-started-inner{
@@ -62,6 +63,10 @@
     width: 80%;
 }
 @media (max-width:1200px){
+    .saving-get-started{
+        padding: 4rem 5.25rem;
+        background-color: #DFE5FF;
+    }
     .dot-line{
         position: absolute;
         left: 1.8rem;
@@ -83,7 +88,7 @@
         padding: 0;
     }
     .saving-steps p{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     /* .step-image{
         width: 50%;

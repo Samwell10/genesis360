@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Footer from "../../Components/Footer/Footer";
 import More from "../../Components/More/More";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import "./Terms.css"
 const Terms = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return ( 
         <div className="terms">
             <Navbar/>

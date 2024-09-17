@@ -1,4 +1,6 @@
 import "./Header.css"
+import { motion } from "framer-motion";
+import { utilityData } from "../data";  
 import appstore from "../../Assets/appstore.png"
 import googleplay from "../../Assets/googleplay.png"
 import headerImage from "../../Assets/headernew.png"
@@ -10,8 +12,7 @@ import SavingImage from "../../Assets/SavingImage.png";
 import walletImage from "../../Assets/wallet (1).png"
 import cbn from "../../Assets/cbn.png";
 import ndic from "../../Assets/cf76315219ed108a9c89fb6a00fa2184.png"
-import { motion } from "framer-motion";
-import { utilityData } from "../data";
+import ImageComponent from "../ImageComponent";
 
 
 export const Header = () => {
@@ -19,9 +20,9 @@ export const Header = () => {
         <div className="header">
             <div className="header-info">
                 <div 
-                    // initial={{ opacity: 0 }}
-                    // whileInView={{ opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.1}}     
+                    // initial={{ y: -100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ type: "spring", duration: 1, delay: 0.1 }}        
                     className="header-info-top"
                 >
                     <h4
@@ -51,12 +52,14 @@ export const Header = () => {
                             // whileInView={{ x: 0, opacity: 1 }}
                             // transition={{ type: "spring", duration: 1, delay: 1}}   
                             src={googleplay}
+                            loading="lazy"
                         ></img>
                         <img 
-                            initial={{ x: -100, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
-                            transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                            // initial={{ x: -100, opacity: 0 }}
+                            // whileInView={{ x: 0, opacity: 1 }}
+                            // transition={{ type: "spring", duration: 1, delay: 0.8}}   
                             src={appstore}
+                            loading="lazy"
                         ></img>
                     </div>
                 </div>
@@ -67,7 +70,10 @@ export const Header = () => {
                 // transition={{ type: "spring", duration: 1, delay: 1}}     
                 className="header-image" 
             >
-                <img src={headerImage}></img>
+                <ImageComponent
+                    src={headerImage}
+                    hash="LBHn1%{1%BCV01BiM-#IIVJ5%3Vg"
+                />
             </div>
         </div>
     );
@@ -154,7 +160,10 @@ export const UtilityHeader = () =>{
                 </div>
             </div>
             <div className="header-right utility-header-right">
-                <img src={utilityImage}></img>
+                <ImageComponent
+                    src={utilityImage}
+                    hash="LIJjuE+Z0K-:t:0LIo-p_2r=i_WF"
+                />
             </div>
         </div>
     )
@@ -193,7 +202,10 @@ export const InvestmentHeader = () =>{
                 </div>
             </div>
             <div className="header-right investment-header-right">
-                <img src={investmentImage}></img>
+                <ImageComponent
+                    src={investmentImage}
+                    hash="LcHnZ@~W?at8%go}t8bcOsS5s:w{"
+                />
             </div>
         </div>
     )
@@ -232,7 +244,10 @@ export const WalletHeader = () =>{
                 </div>
             </div>
             <div className="header-right wallet-header-right">
-                <img src={walletImage}></img>
+                <ImageComponent
+                    src={walletImage}
+                    hash="LJI=[c~W?u?HNztmohbu-i-qD4ae"
+                />
             </div>
         </div>
     )
@@ -241,37 +256,40 @@ export const MarketHeader = () =>{
     return(
         <div className="header market-header investment-header">
             <div className="header-left investment-header-left">
-                <motion.h4
-                    initial={{ y: -100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <h4
+                    // initial={{ y: -100, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                    Simplify and Streamline Your Grocery Shopping
-                </motion.h4>
-                <motion.p 
-                    initial={{ y: -50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </h4>
+                <p 
+                    // initial={{ y: -50, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                    We offers a straightforward solution for hotels and restaurants to access top-notch products at competitive prices, keep track of your inventory, so that you can focus on serving delicious food to your patrons.
-                </motion.p>
+                </p>
                 <div className="download-buttons investment-download-buttons">
-                    <motion.img 
-                        initial={{ x: -50, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <img 
+                        // initial={{ x: -50, opacity: 0 }}
+                        // whileInView={{ x: 0, opacity: 1 }}
+                        // transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></motion.img>
-                    <motion.img 
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></img>
+                    <img 
+                        // initial={{ x: -100, opacity: 0 }}
+                        // whileInView={{ x: 0, opacity: 1 }}
+                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></motion.img>
+                    ></img>
                 </div>
             </div>
             <div className="header-right market-header-right wallet-header-right">
-                <img src={marketimage}></img>
+                <ImageComponent
+                    src={marketimage}
+                    hash="LAF=m#00?wjD00%hxD-p?FIUIpt7"
+                />
             </div>
         </div>
     )
@@ -310,7 +328,10 @@ export const LoanHeader = () =>{
                 </div>
             </div>
             <div className="header-right loan-header-right">
-                <img src={loanImage}></img>
+                <ImageComponent
+                    src={loanImage}
+                    hash="LBC?DpIA~qob-:xuIoxu%ND%S$NG"
+                />
                 <div className="loan-circle">
                     
                 </div>
@@ -361,7 +382,10 @@ export const SavingHeader = () =>{
                 </div>
             </div>
             <div className="header-right wallet-header-right">
-                <img src={SavingImage}></img>
+                <ImageComponent
+                    src={SavingImage}
+                    hash="LMDL5Jqt0aNM24S+?at7F3RjxZxW"
+                />
             </div>
         </div>
     )

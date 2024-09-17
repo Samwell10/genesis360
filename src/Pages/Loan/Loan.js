@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Loan.css"
 import { LoanBanner } from "../../Components/Banner/Banner";
 import { LoanEligibility, LoanRequirement } from "../../Components/Eligibility/Eligibility";
@@ -8,6 +9,9 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { startedData } from "../../Components/data";
 
 const Loan = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return ( 
         <div className="loan">
             <Navbar/>

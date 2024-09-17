@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Contact.css"
 import Footer from "../../Components/Footer/Footer";
 import More from "../../Components/More/More";
@@ -5,6 +6,9 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { MdOutlinePermPhoneMsg } from "react-icons/md";
 import { contactData } from "../../Components/data";
 const Contact = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return ( 
         <div className="contact">
             <Navbar/>

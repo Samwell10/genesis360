@@ -32,8 +32,11 @@
     display: none;
 }
 .navbar-nav nav ul li button{
+    padding: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
+    justify-content: center ;
     border: none;
     background-color: transparent;
     font-size: 1.1rem;

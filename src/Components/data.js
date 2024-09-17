@@ -93,14 +93,16 @@ export const navbaritems = [
         ]
     },
     {
-        title:"Calculator"
+        title:"Calculator",
+        link:"/calculator"
     },
     {
         title:"News & Blog",
         link:"/blog"
     },
     {
-        title:"FAQS"
+        title:"FAQS",
+        link:"/FAQs"
     },
     {
         title:"Contact Us",

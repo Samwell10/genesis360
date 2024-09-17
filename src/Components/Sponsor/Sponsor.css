@@ -1,5 +1,8 @@
 .sponsor-outer{
-    padding: 10rem 0rem;
+    padding: 7rem 0rem 1rem 0rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 .sponsor-header{
     font-size: 3rem;
@@ -7,9 +10,15 @@
     text-align: center;
     color: #183D36;
 }
+.marquee {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
 .sponsor{
     margin-top: 40px;
-    width: 100%;
+    animation: scroll 42s linear infinite;
+    width: max-content; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,9 +28,17 @@
     width: 8%;
     object-fit: contain;
 }
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 @media (max-width:800px) {
     .sponsor-outer{
-        padding: 6.25rem 0rem;
+        padding: 5rem 0rem;
     }
     .sponsor-header{
         font-size: 2rem;
