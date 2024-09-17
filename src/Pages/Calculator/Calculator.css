@@ -104,6 +104,10 @@
     gap: 40px;
     background-color: #F2F2F2;
 }
+.calculator-content-right-2{
+    width: 50%;
+    background-color: #F2F2F2;
+}
 .calculator-content-right svg{
     font-size: 7.5rem;
     font-weight: 700;
@@ -113,6 +117,69 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
+    color: #183D36;
+}
+.calculator-result-top{
+    padding: 2.6rem 2.4rem;
+    border-bottom: 1px solid #183D36;
+}
+.calculator-result-bottom{
+    padding: 2.6rem 2.4rem;
+}
+.calculator-result-top p, .calculator-result-bottom p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #183D36;
+}
+.calculator-result-top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.calculator-result-top-inner h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.calculator-result-top-inner p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.calculator-result-bottom-inner{
+    margin-top: 28px;
+}
+.calculator-analysis{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calculator-analysis div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pointer{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #183D36;
+}
+.calculator-analysis div p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #183D36;
+}
+.calculator-analysis div p span{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #183D36;
+}
+.calculate-result{
+    font-size: 1rem;
+    font-weight: 700;
     color: #183D36;
 }
 @media (max-width: 1130px) {
