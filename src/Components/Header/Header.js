@@ -19,42 +19,42 @@ export const Header = () => {
     return (
         <div className="header">
             <div className="header-info">
-                <div 
-                //    initial={{ y: -100, opacity: 0 }}
-                //     whileInView={{ y: 0, opacity: 1 }}
-                //     transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.div 
+                   initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     className="header-info-top"
                 >
-                    <h4
-                        // initial={{ y: -100, opacity: 0 }}
-                        // whileInView={{ y: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                    <motion.h4
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     >
                         The Powerhouse For Food Financing and Financial Freedom
-                    </h4>
-                    <p 
+                    </motion.h4>
+                    <motion.p 
                         // initial={{ y: -50, opacity: 0 }}
                         // whileInView={{ y: 0, opacity: 1 }}
                         // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                     >
                         Discover the ultimate solution for both food financing and achieving financial freedom. Our platform empowers you with tailored financial tools to support your food needs and help you build a secure financial future, all in one place.
-                    </p>
-                </div>
-                <div 
-                    // initial={{ y: 50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 1}}     
+                    </motion.p>
+                </motion.div>
+                <motion.div 
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 1}}     
                     className="header-image header-image-mobile" 
                 >
                     <ImageComponent
                         src={headerImage}
                         hash="LBHn1%{1%BCV01BiM-#IIVJ5%3Vg"
                     />
-                </div>
-                <div 
-                    //  initial={{ opacity: 0 }}
-                    //  whileInView={{ opacity: 1 }}
-                    //  transition={{ type: "spring", duration: 1, delay: 0.1}}     
+                </motion.div>
+                <motion.div 
+                     initial={{ opacity: 0 }}
+                     whileInView={{ opacity: 1 }}
+                     transition={{ type: "spring", duration: 1, delay: 0.1}}     
                     className="header-info-bottom"
                 >
                     <div className="download-buttons">
@@ -73,19 +73,19 @@ export const Header = () => {
                             loading="lazy"
                         ></img>
                     </div>
-                </div>
+                </motion.div>
             </div>
-            <div 
-                // initial={{ y: 50, opacity: 0 }}
-                // whileInView={{ y: 0, opacity: 1 }}
-                // transition={{ type: "spring", duration: 1, delay: 1}}     
+            <motion.div 
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring", duration: 1, delay: 1}}     
                 className="header-image header-image-desktop" 
             >
                 <ImageComponent
                     src={headerImage}
                     hash="LBHn1%{1%BCV01BiM-#IIVJ5%3Vg"
                 />
-            </div>
+            </motion.div>
         </div>
     );
 }
@@ -93,34 +93,34 @@ export const ProductBusinessHeader = () =>{
     return(
         <div className="header product-header">
             <div className="header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                     Empowering Business<br></br> Owners to Grow With Fast<br></br> and Easy SME Loans of up to<br></br> NGN 5 Million
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                     className="business-header-text"
                 >
                     We support and offers business owners with SME loans up to NGN5 million. Our SME loans are fast and easy to get as our approval process takes only 24 hours.
-                </p>
+                </motion.p>
                 <div className="download-buttons product-download-buttons">
-                    <img 
-                        // initial={{ x: -50, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <motion.img 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></img>
-                    <img 
-                        // initial={{ x: -100, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></motion.img>
+                    <motion.img 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></img>
+                    ></motion.img>
                 </div>
             </div>
             <div className="header-right">
@@ -133,33 +133,33 @@ export const UtilityHeader = () =>{
     return(
         <div className="utility-header">
             <div className="header-left utility-header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                     Pay Bills Easily<br></br>Right From Your<br></br>Phone
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                     Genesis360 app lets customers pay for airtime and mobile data at discounted rates, and settle cable, internet, and electricity bills with no service charges.
-                </p>
+                </motion.p>
                 <div className="download-buttons utility-download-buttons">
-                    <img 
-                        // initial={{ x: -50, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <motion.img 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></img>
-                    <img 
-                        // initial={{ x: -100, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></motion.img>
+                    <motion.img 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></img>
+                    ></motion.img>
                 </div>
                 <div className="utility-banner">
                     <div>
@@ -193,34 +193,34 @@ export const InvestmentHeader = () =>{
     return(
         <div className="header investment-header">
             <div className="header-left investment-header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                     Investment <br></br>in food businesses around you
                    {/* Make<br></br> Investments That<br></br> Help You Grow. */}
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                     Genesis360 offers access to a curated portfolio of food business, allowing you to invest securely and confidently on the go. Enjoy up to 25% returns with investment durations of 6-12 months.
-                </p>
+                </motion.p>
                 <div className="download-buttons investment-download-buttons">
-                    <img 
+                    <motion.img 
                         // initial={{ x: -50, opacity: 0 }}
                         // whileInView={{ x: 0, opacity: 1 }}
                         // transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></img>
-                    <img 
-                        // initial={{ x: -100, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></motion.img>
+                    <motion.img 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></img>
+                    ></motion.img>
                 </div>
             </div>
             <div className="header-right investment-header-right">
