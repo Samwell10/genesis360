@@ -1,5 +1,5 @@
 import { FaFacebook } from "react-icons/fa";
-import { NavbarBlog } from "../../Components/Navbar/Navbar";
+import { Navbar, NavbarBlog } from "../../Components/Navbar/Navbar";
 import { RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
 import './Blog.css'
 // import blogimage from "../Assets/blogimg.png"
@@ -28,7 +28,7 @@ const BlogDetails = () => {
     }, []);
     return ( 
         <div className="blog">
-            <NavbarBlog/>
+            <Navbar/>
            {loading ?(
              <SkeletonTheme baseColor="#808080" highlightColor="#9d9d9d">
                 <p style={{width:"100%", height:"400px", marginTop:"40px"}}>

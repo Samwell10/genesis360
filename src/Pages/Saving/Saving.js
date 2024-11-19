@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 import { SavingBanner } from "../../Components/Banner/Banner";
 import { startedData } from "../../Components/data";
 import Footer from "../../Components/Footer/Footer";
@@ -31,12 +32,21 @@ const Saving = () => {
                             <p>1</p>
                         </div>
                         <div className="saving-steps">
-                            <p>
+                            <motion.p
+                                initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.3 }}
+                            >
                             Download Genesis360 App
-                            </p>
-                            <div className="step-image">
+                            </motion.p>
+                            <motion.div 
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.6 }}
+                                className="step-image"
+                            >
                                 <img src={download}></img>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     <div className="saving-inners">
@@ -44,12 +54,21 @@ const Saving = () => {
                             <p>2</p>
                         </div>
                         <div className="saving-steps">
-                            <p>
+                            <motion.p
+                                initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.3 }}
+                            >
                             Register/Log In
-                            </p>
-                            <div className="step-image">
+                            </motion.p>
+                            <motion.div 
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.6 }}
+                                className="step-image"
+                            >
                                 <img src={signup}></img>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     <div className="saving-inners">
@@ -57,12 +76,21 @@ const Saving = () => {
                             <p>3</p>
                         </div>
                         <div className="saving-steps">
-                            <p>
+                            <motion.p
+                                initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.3 }}
+                            >
                             Click on “Target Savings”
-                            </p>
-                            <div className="step-image">
+                            </motion.p>
+                            <motion.div 
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.6 }}
+                                className="step-image"
+                            >
                                 <img src={target}></img>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     <div className="saving-inners">
@@ -70,12 +98,21 @@ const Saving = () => {
                             <p>4</p>
                         </div>
                         <div className="saving-steps">
-                            <p>
+                            <motion.p
+                                initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.3 }}
+                            >
                             Enter Amount & Preferred Tenure
-                            </p>
-                            <div className="step-image">
+                            </motion.p>
+                            <motion.div 
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.6 }}
+                                className="step-image"
+                            >
                                 <img src={tenure}></img>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     <div className="saving-inners">
@@ -83,12 +120,21 @@ const Saving = () => {
                             <p>5</p>
                         </div>
                         <div className="saving-steps">
-                            <p>
+                            <motion.p
+                                initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.3 }}
+                            >
                             Start Saving
-                            </p>
-                            <div className="step-image">
+                            </motion.p>
+                            <motion.div 
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ type: "spring", duration: 1.2, delay: 0.6 }}
+                                className="step-image"
+                            >
                                 <img src={save}></img>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

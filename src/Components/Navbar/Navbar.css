@@ -33,7 +33,7 @@
 }
 .navbar-nav nav ul li button{
     padding: 0px;
-    margin: 0px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center ;
@@ -123,6 +123,9 @@
         align-items: center;
         gap:20px;
     }
+    .navbar-nav nav ul li button{
+        font-size: 0.9rem;
+    }
     .nav-text{
         font-size: 0.9rem;
         font-weight: 700;
@@ -144,7 +147,7 @@
 
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .navbar{
         width: 100%;
         padding: 2rem 1.2rem;

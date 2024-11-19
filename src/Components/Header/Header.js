@@ -20,9 +20,9 @@ export const Header = () => {
         <div className="header">
             <div className="header-info">
                 <div 
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.1 }}        
+                //    initial={{ y: -100, opacity: 0 }}
+                //     whileInView={{ y: 0, opacity: 1 }}
+                //     transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     className="header-info-top"
                 >
                     <h4
@@ -39,6 +39,17 @@ export const Header = () => {
                     >
                         Discover the ultimate solution for both food financing and achieving financial freedom. Our platform empowers you with tailored financial tools to support your food needs and help you build a secure financial future, all in one place.
                     </p>
+                </div>
+                <div 
+                    // initial={{ y: 50, opacity: 0 }}
+                    // whileInView={{ y: 0, opacity: 1 }}
+                    // transition={{ type: "spring", duration: 1, delay: 1}}     
+                    className="header-image header-image-mobile" 
+                >
+                    <ImageComponent
+                        src={headerImage}
+                        hash="LBHn1%{1%BCV01BiM-#IIVJ5%3Vg"
+                    />
                 </div>
                 <div 
                     //  initial={{ opacity: 0 }}
@@ -68,7 +79,7 @@ export const Header = () => {
                 // initial={{ y: 50, opacity: 0 }}
                 // whileInView={{ y: 0, opacity: 1 }}
                 // transition={{ type: "spring", duration: 1, delay: 1}}     
-                className="header-image" 
+                className="header-image header-image-desktop" 
             >
                 <ImageComponent
                     src={headerImage}
@@ -93,8 +104,9 @@ export const ProductBusinessHeader = () =>{
                     // initial={{ y: -50, opacity: 0 }}
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                    className="business-header-text"
                 >
-                    We support and offers business owners with SME loans up to <br></br>NGN5 million. Our SME loans are fast and easy to get as our<br></br> approval process takes only 24 hours.
+                    We support and offers business owners with SME loans up to NGN5 million. Our SME loans are fast and easy to get as our approval process takes only 24 hours.
                 </p>
                 <div className="download-buttons product-download-buttons">
                     <img 
@@ -150,13 +162,22 @@ export const UtilityHeader = () =>{
                     ></img>
                 </div>
                 <div className="utility-banner">
-                    {utilityData && Array.isArray(utilityData) ? (
-                        utilityData.map((data, index) => (
-                            <img key={index} src={data.body} alt="utility data" />
-                        ))
-                    ) : (
-                        <p>No utility data available.</p>
-                    )}
+                    <div>
+                        {utilityData && Array.isArray(utilityData) ? (
+                            utilityData.map((data, index) => (
+                                <img key={index} src={data.body} alt="utility data" />      
+                            ))
+                        ) : (
+                            <p>No utility data available.</p>
+                        )}
+                        {utilityData && Array.isArray(utilityData) ? (
+                            utilityData.map((data, index) => (
+                                <img key={index} src={data.body} alt="utility data" />      
+                            ))
+                        ) : (
+                            <p>No utility data available.</p>
+                        )}
+                    </div>
                 </div>
             </div>
             <div className="header-right utility-header-right">
@@ -177,14 +198,15 @@ export const InvestmentHeader = () =>{
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
-                   Make<br></br> Investments That<br></br> Help You Grow.
+                    Investment <br></br>in food businesses around you
+                   {/* Make<br></br> Investments That<br></br> Help You Grow. */}
                 </h4>
                 <p 
                     // initial={{ y: -50, opacity: 0 }}
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
-                    Genesis360 offers access to a curated portfolio of global investments, allowing you to invest securely and confidently on the go. Enjoy up to 25% returns with investment durations of 6-12 months.
+                    Genesis360 offers access to a curated portfolio of food business, allowing you to invest securely and confidently on the go. Enjoy up to 25% returns with investment durations of 6-12 months.
                 </p>
                 <div className="download-buttons investment-download-buttons">
                     <img 
@@ -226,7 +248,7 @@ export const WalletHeader = () =>{
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
-                    With lightning-fast transfers, debit cards, group accounts, and shopping features, Genesis360 makes sending, receiving, and managing your money effortless.
+                    With lightning-fast transfers, Genesis360 makes sending, receiving, and managing your money effortless.
                 </p>
                 <div className="download-buttons investment-download-buttons">
                     <img 
@@ -268,7 +290,7 @@ export const MarketHeader = () =>{
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
-                   We offers a straightforward solution for hotels and restaurants to access top-notch products at competitive prices, keep track of your inventory, so that you can focus on serving delicious food to your patrons.
+                   We offers a straightforward solution for hotels and restaurants to access top-notch products at competitive prices, keep track of your inventory, so that you can focus on serving delicious food to your customers.
                 </p>
                 <div className="download-buttons investment-download-buttons">
                     <img 
@@ -310,7 +332,7 @@ export const LoanHeader = () =>{
                     // whileInView={{ y: 0, opacity: 1 }}
                     // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
-                    Life is unpredictable, and sometimes you need extra financial help. Our personal loan app offers fast, easy access to funds with competitive rates and flexible repayment options. Whether consolidating debt, making a major purchase, or covering an emergency expense, Genesis360 is here to support you.
+                    Life is unpredictable, and sometimes you need extra financial help. Our personal loan app offers fast, easy access to credit for food with competitive rates and flexible repayment options. Making a major purchase, or covering an emergency expense, Genesis360 is here to support you.
                 </p>
                 <div className="download-buttons investment-download-buttons">
                     <img 

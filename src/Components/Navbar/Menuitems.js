@@ -36,7 +36,7 @@ const Menuitems = ({items, depthLevel}) => {
                     onClick={()=>setDropDown((prev)=> !prev)}
                 >
                     {items.title}
-                    {depthLevel === 0 ? <IoMdArrowDropdown /> : <IoMdArrowDropup/>}
+                    {depthLevel === 0 ? <IoMdArrowDropdown /> : <IoMdArrowDropdown/>}
                 </button>
                 <Dropdown submenu={items.submenu} dropdown={dropdown} depthLevel={depthLevel}/>
             </>

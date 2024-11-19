@@ -28,7 +28,7 @@ const Feature = () => {
                 </div>
                 <div className="feature-inner">
                     <img src={cashback}></img>
-                    <p>3% Cashback</p>
+                    <p>Cashback</p>
                 </div>
                 <div className="feature-inner">
                     <img src={charge}></img>

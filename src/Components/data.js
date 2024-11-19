@@ -152,27 +152,32 @@ export const aboutData = [
     {
         title:"Account Opened",
         total: "500K+",
-        position: "top"
+        position: "top",
+        axis:"x"
     },
     {
         title:"Loan Application per Day",
         total: "8K+",
-        position: "center bottom"
+        position: "center bottom",
+        axis:"x"
     },
     {
         title:"Transaction Processed Monthly",
         total: "200K+",
-        position: "right"
+        position: "right",
+        axis:"y"
     },
     {
         title:"Grocery Purchase",
         total: "₦4M+",
-        position: "top"
+        position: "top",
+        axis:"y"
     },
     {
         title:"Upto Savings on Genesis360",
         total: "₦1K+",
-        position: "left"
+        position: "left",
+        axis:"y"
     }
 ]
 

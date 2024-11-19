@@ -21,13 +21,13 @@ const Investment = () => {
                         <h4>Simplified Investing</h4>
                         <p>With minimum investments starting at just NGN 5,000, investing is now within reach for everyone. Everyone is welcome to get started.</p>
                     </div>
-                    <div className="investment-body-inner">
+                    {/* <div className="investment-body-inner">
                         <h4>Invest with Confidence</h4>
                         <p>We collaborate with top licensed investment firms like ARM, AIICO, and Stanbic.</p>
-                    </div>
+                    </div> */}
                     <div className="investment-body-inner">
                         <h4>Broaden your portfolio</h4>
-                        <p>Invest across diverse industries, including fixed income instruments, agriculture, transportation, and more.</p>
+                        <p>Invested across diverse food businesses, including food retail stores, restaurants, and farmers.</p>
                     </div>
 
                 </div>

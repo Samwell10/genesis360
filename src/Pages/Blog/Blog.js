@@ -1,13 +1,13 @@
 import Footer from "../../Components/Footer/Footer";
-import {Header} from "../../Components/Header/Header";
-import { NavbarBlog } from "../../Components/Navbar/Navbar";
+import Header from "../../Components/BlogHeader/Header";
+import { Navbar, NavbarBlog } from "../../Components/Navbar/Navbar";
 import {Suscribe} from "../../Components/Suscribe/Suscribe";
 
 
 const Blog = () => {
     return ( 
         <div className="blog">
-            <NavbarBlog/>
+            <Navbar/>
             <Header/>
             <Suscribe/>
             <Footer/>

@@ -16,31 +16,53 @@ export const Banner = () => {
         <div className="banner-inner">
             <div className="banner">
                 <div className="banner-component">
-                    <div className="banner-top">
+                    <motion.div 
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.3 }}
+                        className="banner-top"
+                    >
                         <h4>Trusted by millions of users in Nigeria</h4>
-                    </div>
-                    <div className="banner-bottom">
+                    </motion.div>
+                    <motion.div 
+                        initial={{ y: -50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.6 }}
+                        className="banner-bottom"
+                    >
                         <p>A customer base of over 5 million is a testament to the growing adoption of Genesis360’s fintech solutions among Nigerians.</p>
-                    </div>
+                    </motion.div>
                 </div>
-                {aboutData.map((data)=>{
+                {aboutData.map((data,index)=>{
                     return(
                         <AboutCard
                             title={data.title}
                             total={data.total}
                             position={data.position}
+                            axis={data.axis}
+                            delay={(index/10) + (index/10)+ (index/10) + 0.9}
                         />
                     )
                 })}
             </div>
             <div className="banner banner-mobile">
                 <div className="banner-component">
-                    <div className="banner-top">
+                    <motion.div 
+                        initial={{ y: -50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.3 }}
+                        className="banner-top"
+                    >
                         <h4>Trusted by millions of users in Nigeria</h4>
-                    </div>
-                    <div className="banner-bottom">
+                    </motion.div>
+                    <motion.div 
+                        initial={{ y: -20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.6 }}
+                        className="banner-bottom"
+                    >
                         <p>A customer base of over 5 million is a testament to the growing adoption of Genesis360’s fintech solutions among Nigerians.</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="about-cards">
                     {aboutData.map((data)=>{
@@ -106,7 +128,7 @@ export const InvestmentBanner = () =>{
                     We've simplified the process so anyone can get started easily.
                 </h4>
                 <p>
-                    You can now easily access pre-vetted, low-to-medium risk primary and secondary investment opportunities with any amount you have. Enjoy transparency with no hidden fees or charges. We conduct thorough due diligence and pre-vetting on all investments to ensure maximum safety.
+                    You can now easily access pre-vetted, low-to-medium risk food businesses with any amount you have. Enjoy transparency with no hidden fee or charges. We conduct thorough due diligence and pre-vetting on all investments to ensure maximum safety.
                 </p>
             </div>
             <div className="investment-banner-right">
@@ -243,40 +265,59 @@ export const SavingBanner = () =>{
         <div className="banner-inner">
             <div className="banner loan-banner">
                 <div className="banner-component">
-                    <div className="banner-top loan-banner-top">
+                    <motion.div 
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}
+                    className="banner-top loan-banner-top">
                         <h4>Why Choose Genesis360?</h4>
-                    </div>
+                    </motion.div>
                    
                 </div>
-                {whyData3.map((data)=>{
+                {whyData3.map((data, index)=>{
                     return(
-                        <div className="business-section-card loan-section-card">
+                        <motion.div 
+                            initial={{ x: -50, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ type: "spring", duration: 1.2, delay: ((index/10) + (index/10)+ (index/10) + 0.9) }}
+                            className="business-section-card loan-section-card"
+                        >
                             <img src={data.icon}></img>
                             <div>
                                 <h4>{data.title}</h4>
                                 <p>{data.body}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     )
                 })}
             </div>
             <div className="banner banner-mobile">
                 <div className="banner-component">
-                    <div className="banner-top loan-banner-top">
-                        <h4>Why Borrow From Genesis360?</h4>
-                    </div>
+                    <motion.div 
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.3 }}
+                        className="banner-top loan-banner-top"
+                    >
+                        <h4>Why Choose Genesis360?</h4>
+                    </motion.div>
                    
                 </div>
                 <div className="about-cards loan-about-cards">
-                {whyData3.map((data)=>{
+                {whyData3.map((data, index)=>{
                     return(
-                        <div className="business-section-card">
-                            <img src={data.icon}></img>
-                            <div>
-                                <h4>{data.title}</h4>
-                                <p>{data.body}</p>
-                            </div>
+                        <motion.div 
+                            initial={{ x: -50, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ type: "spring", duration: 1.2, delay: ((index/10) + (index/10)+ (index/10) + 0.9) }}
+                            className="business-section-card loan-section-card"
+                        >
+                        <img src={data.icon}></img>
+                        <div>
+                            <h4>{data.title}</h4>
+                            <p>{data.body}</p>
                         </div>
+                    </motion.div>
                     )
                 })}
                 </div>
