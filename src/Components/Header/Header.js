@@ -236,33 +236,33 @@ export const WalletHeader = () =>{
     return(
         <div className="header wallet-header investment-header">
             <div className="header-left investment-header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                    Make smart financial moves with Genesis360 Wallet.
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                     With lightning-fast transfers, Genesis360 makes sending, receiving, and managing your money effortless.
-                </p>
+                </motion.p>
                 <div className="download-buttons investment-download-buttons">
-                    <img 
-                        // initial={{ x: -50, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <motion.img 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></img>
-                    <img 
-                        // initial={{ x: -100, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></motion.img>
+                    <motion.img 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></img>
+                    ></motion.img>
                 </div>
             </div>
             <div className="header-right wallet-header-right">
@@ -278,33 +278,33 @@ export const MarketHeader = () =>{
     return(
         <div className="header market-header investment-header">
             <div className="header-left investment-header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                    Simplify and Streamline Your Grocery Shopping
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                    We offers a straightforward solution for hotels and restaurants to access top-notch products at competitive prices, keep track of your inventory, so that you can focus on serving delicious food to your customers.
-                </p>
+                </motion.p>
                 <div className="download-buttons investment-download-buttons">
-                    <img 
-                        // initial={{ x: -50, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <motion.img 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></img>
-                    <img 
-                        // initial={{ x: -100, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></motion.img>
+                    <motion.img 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></img>
+                    ></motion.img>
                 </div>
             </div>
             <div className="header-right market-header-right wallet-header-right">
@@ -320,33 +320,33 @@ export const LoanHeader = () =>{
     return(
         <div className="header loan-header">
             <div className="header-left loan-header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                 Get the Funds You Need, When You Need Them
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                     Life is unpredictable, and sometimes you need extra financial help. Our personal loan app offers fast, easy access to credit for food with competitive rates and flexible repayment options. Making a major purchase, or covering an emergency expense, Genesis360 is here to support you.
-                </p>
+                </motion.p>
                 <div className="download-buttons investment-download-buttons">
-                    <img 
-                        // initial={{ x: -50, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <motion.img 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
                         src={googleplay}
-                    ></img>
-                    <img 
-                        // initial={{ x: -100, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                    ></motion.img>
+                    <motion.img 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8}}   
                         src={appstore}
-                    ></img>
+                    ></motion.img>
                 </div>
             </div>
             <div className="header-right loan-header-right">
@@ -365,41 +365,41 @@ export const SavingHeader = () =>{
     return(
         <div className="header saving-header">
             <div className="header-left investment-header-left">
-                <h4
-                    // initial={{ y: -100, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.3 }}        
+                <motion.h4
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                 >
                    Unlock Financial Potential and Your Financial Goals Faster with Genesis360
-                </h4>
-                <p 
-                    // initial={{ y: -50, opacity: 0 }}
-                    // whileInView={{ y: 0, opacity: 1 }}
-                    // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
+                </motion.h4>
+                <motion.p 
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                 >
                    Genesis360 is your ultimate partner in achieving financial freedom and reaching your goals faster with our innovative savings solutions. Our platform is designed to help you grow your wealth securely and efficiently, taking advantage of high interest rates and a disciplined savings approach to secure your future.
-                </p>
+                </motion.p>
                 <div className="download-buttons saving-download-buttons">
-                    <button 
-                        // initial={{ x: -50, opacity: 0 }}
-                        // whileInView={{ x: 0, opacity: 1 }}
-                        // transition={{ type: "spring", duration: 1, delay: 1}}   
+                    <motion.button 
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1}}   
                     >
                         Get Started
-                    </button>
+                    </motion.button>
                     <div>
-                        <img 
-                            // initial={{ x: -100, opacity: 0 }}
-                            // whileInView={{ x: 0, opacity: 1 }}
-                            // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                        <motion.img 
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ type: "spring", duration: 1, delay: 0.8}}   
                             src={cbn}
-                        ></img>
-                        <img 
-                            // initial={{ x: -100, opacity: 0 }}
-                            // whileInView={{ x: 0, opacity: 1 }}
-                            // transition={{ type: "spring", duration: 1, delay: 0.8}}   
+                        ></motion.img>
+                        <motion.img 
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ type: "spring", duration: 1, delay: 0.8}}   
                             src={ndic}
-                        ></img>
+                        ></motion.img>
                     </div>
                 </div>
             </div>
