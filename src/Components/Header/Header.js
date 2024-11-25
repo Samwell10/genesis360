@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { utilityData } from "../data";  
 import appstore from "../../Assets/appstore.png"
 import googleplay from "../../Assets/googleplay.png"
-import headerImage from "../../Assets/headernew.png"
+import headerImage from "../../Assets/headernew.jpg"
 import utilityImage from "../../Assets/utility.png"
 import investmentImage from "../../Assets/investmentHeader.png"
 import marketimage from "../../Assets/marketplace.png"
@@ -30,14 +30,14 @@ export const Header = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ type: "spring", duration: 1, delay: 0.3 }}        
                     >
-                        The Powerhouse For Food Financing and Financial Freedom
+                        Financing solutions tailored to food businesses and consumers.
                     </motion.h4>
                     <motion.p 
                         // initial={{ y: -50, opacity: 0 }}
                         // whileInView={{ y: 0, opacity: 1 }}
                         // transition={{ type: "spring", duration: 1, delay: 0.5 }}  
                     >
-                        Discover the ultimate solution for both food financing and achieving financial freedom. Our platform empowers you with tailored financial tools to support your food needs and help you build a secure financial future, all in one place.
+                        Genesis360 provides access to alternative financing for food by allowing customers to buy food items with no initial deposit or payment and pay back in installments over a specified period of time.
                     </motion.p>
                 </motion.div>
                 <motion.div 
