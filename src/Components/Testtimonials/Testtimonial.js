@@ -6,15 +6,15 @@ const Testtimonial = () => {
         <div className="testimony">
             <h3 className="testimony-header">Testimonials</h3>
             <div className="testimonial-videos">
-                <iframe
-                    src="https://www.youtube.com/embed/JbFfWNG8zAw?si=o0j-WKKhANupxhV8&amp;start=10" 
-                    title="YouTube video player" 
-                    frameborder="0" 
+                <iframe 
+                    src="https://drive.google.com/file/d/1iG9vArB5BUYUDpf1RszRTSOD-x4Z556Q/preview" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    frameborder="0" 
                     referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen
-                >    
+                >
                 </iframe>
+               
             </div>
             <div className="testimony-body">
                 {testimonydata.map((testimony)=>{
@@ -33,7 +33,7 @@ const Testtimonial = () => {
             </div>
             <div className="testimonial-videos">
                 <iframe
-                    src="https://www.youtube.com/embed/7HubN8c-9-A?si=lhKpRht_az7DPxwk" 
+                    src="https://drive.google.com/file/d/1MZmKnzXwxznOsFq57NGHekQVq-9lsRLd/preview"
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
